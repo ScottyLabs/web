@@ -1,12 +1,22 @@
 import Link from "next/link";
 import React, { ReactElement } from "react";
 import styles from "./index.module.scss";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbarLeft}>
-        <img src="/icons/scotty-dog.svg" alt="ScottyLabs icon" />
+        <Link href="/" passHref>
+          <a>
+            <Image
+              width={32}
+              height={32}
+              src="/icons/scotty-dog.svg"
+              alt="ScottyLabs icon"
+            />
+          </a>
+        </Link>
       </div>
       <div className={styles.navbarRight}>
         <Link href="/about" passHref>
