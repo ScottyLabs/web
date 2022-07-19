@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 3em 10em 0 10em;
+}
+
+.heroImage img {
+  mask: linear-gradient(#0003, #000f);
+}
