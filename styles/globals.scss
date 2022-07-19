@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "M Plus 1P", sans-serif;
+  color: $text-primary;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  color: $text-primary;
+  text-decoration: none;
+
+  display: inline;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+  padding-bottom: 2px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: 0;
+    bottom: -3px;
+    background: $text-primary;
+    height: 4px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  &:is(:hover, :focus, :active)::after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}

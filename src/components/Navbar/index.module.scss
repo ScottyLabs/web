@@ -1,0 +1,23 @@
+@import "~/styles/variables.scss";
+
+.navbarContainer {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+
+  padding: 1.5em 10em 1.5em 3em;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navbarRight {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5em;
+}
+
+.navLink {
+  font-size: $text-size-h2;
+}
