@@ -24,6 +24,7 @@ const Home: NextPage = () => {
             alt="ScottyLabs icon"
           />
         </div>
+        <div className={styles.heroTitle}>ScottyLabs</div>
       </main>
     </div>
   );

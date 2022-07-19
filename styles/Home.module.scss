@@ -1,9 +1,24 @@
+@import "./variables.scss";
+
+$hero-gradient: linear-gradient(#0005, #000f);
+
 .container {
+  padding: 3em 3em 0 3em;
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  padding: 3em 10em 0 10em;
+  gap: 5em;
 }
 
 .heroImage img {
-  mask: linear-gradient(#0003, #000f);
+  mask: $hero-gradient;
+}
+
+.heroTitle {
+  font-size: 8em;
+  font-weight: bold;
+  color: $text-primary;
+  display: flex;
+  align-items: center;
+  mask: $hero-gradient;
 }
