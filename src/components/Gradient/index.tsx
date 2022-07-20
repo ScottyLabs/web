@@ -2,12 +2,22 @@ import { useEffect } from "react";
 import { GradientController } from "./controller";
 import styles from "./index.module.scss";
 
-const GRADIENT_COLORS = ["#F60101", "#272A92", "#00E7D6", "#0780BA"];
+type GradientColors = [string, string, string, string];
+
+const GRADIENT_COLORS: GradientColors = [
+  "#F60101",
+  "#272A92",
+  "#00E7D6",
+  "#0780BA",
+];
 
 const Gradient = ({
   gradientColors = GRADIENT_COLORS,
+  className,
+  ...props
 }: {
-  gradientColors?: string[];
+  gradientColors?: GradientColors;
+  className?: string;
 }) => {
   useEffect(() => {
     const gradient = new GradientController(gradientColors);
@@ -15,7 +25,12 @@ const Gradient = ({
   }, [gradientColors]);
 
   return (
-    <canvas className={styles.canvas} id="gradient-canvas" data-transition-in />
+    <canvas
+      className={styles.canvas}
+      id="gradient-canvas"
+      data-transition-in
+      {...props}
+    />
   );
 };
 
