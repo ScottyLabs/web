@@ -5,7 +5,7 @@ import styles from "./index.module.scss";
 
 /**
  * Toolbar containing just the navigation elements without
- * the gradient background
+ * a gradient background
  */
 const Toolbar = ({ showHomeIcon = true }: { showHomeIcon?: Boolean }) => {
   return (
@@ -44,7 +44,8 @@ const Toolbar = ({ showHomeIcon = true }: { showHomeIcon?: Boolean }) => {
 
 /**
  * Final navbar with a gradient background.
- * If `home` is true, this expands to an entire hero component
+ * If `home` is true, this expands the gradient background to cover
+ * the background of the hero component
  */
 const Navbar = ({ home = false }: { home?: Boolean }) => {
   return (
@@ -60,17 +61,6 @@ const Navbar = ({ home = false }: { home?: Boolean }) => {
         </svg>
       </div>
       <Toolbar showHomeIcon={!home} />
-      <div className={styles.heroContainer}>
-        <div className={styles.heroImage}>
-          <Image
-            width={350}
-            height={350}
-            src="/icons/scotty-dog.svg"
-            alt="ScottyLabs icon"
-          />
-        </div>
-        <div className={styles.heroTitle}>ScottyLabs</div>
-      </div>
     </div>
   );
 };
