@@ -26,7 +26,7 @@ const Gradient = ({
 
   return (
     <canvas
-      className={styles.canvas}
+      className={`${styles.canvas} ${className}`}
       id="gradient-canvas"
       data-transition-in
       {...props}
