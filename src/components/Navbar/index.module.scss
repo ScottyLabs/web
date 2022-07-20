@@ -1,7 +1,5 @@
 @import "~/styles/variables.scss";
 
-$hero-gradient: linear-gradient(#0005, #000f);
-
 .navbarContainer {
   top: 0;
   left: 0;
@@ -32,25 +30,4 @@ $hero-gradient: linear-gradient(#0005, #000f);
 
 .gradient {
   clip-path: url("#gradientClipPath");
-}
-
-.heroContainer {
-  padding: 3em 3em 0 3em;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 5em;
-}
-
-.heroImage img {
-  mask: $hero-gradient;
-}
-
-.heroTitle {
-  font-size: 8em;
-  font-weight: bold;
-  color: $text-primary;
-  display: flex;
-  align-items: center;
-  mask: $hero-gradient;
 }
