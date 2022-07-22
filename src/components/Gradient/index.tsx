@@ -19,12 +19,13 @@ const Gradient = ({
   className?: string;
 }) => {
   useEffect(() => {
-    window.addEventListener("load", () => {
-      if (window?.Gradient != null) {
-        const gradient = new window.Gradient();
-        gradient.initGradient("#gradient-canvas");
-      }
-    });
+    if (window?.Gradient != null) {
+      const gradient = new window.Gradient();
+      gradient.freqX = 14e-5;
+      gradient.freqY = 29e-5;
+      gradient.freqDelta = 1e-4;
+      gradient.initGradient("#gradient-canvas");
+    }
   }, [gradientColors]);
 
   return (

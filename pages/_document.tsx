@@ -13,7 +13,7 @@ export default function Document() {
           src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"
         />
         <Script id="gradient-loader" strategy="afterInteractive">
-          {"window.Gradient = Gradient;"}
+          {`window.Gradient = Gradient;`}
         </Script>
       </body>
     </Html>
