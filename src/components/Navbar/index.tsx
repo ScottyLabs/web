@@ -85,7 +85,7 @@ const Navbar = ({ collapsed = false }: { collapsed?: Boolean }) => {
   return (
     <div>
       {collapsed ? <CollapsedGradient /> : <ExpandedGradient />}
-      <Toolbar />
+      <Toolbar collapsed={collapsed} />
     </div>
   );
 };
