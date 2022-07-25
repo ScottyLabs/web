@@ -29,11 +29,9 @@
 .gradientContainer {
   position: absolute;
   width: 100%;
-  // height: 70%;
   height: 40vw;
 
   @include down($breakpoint-lg) {
-    // height: 50%;
     height: 55vw;
   }
 
