@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Hero from "../src/components/Hero";
 import Navbar from "../src/components/Navbar";
-import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +11,7 @@ const Home: NextPage = () => {
         <meta name="description" content="ScottyLabs" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Navbar home />
+      <Navbar />
       <Hero />
     </div>
   );

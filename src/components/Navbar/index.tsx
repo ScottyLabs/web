@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/future/image";
 import Link from "next/link";
 import { useState } from "react";
-import Gradient from "../Gradient";
+import { CollapsedGradient, ExpandedGradient } from "../Gradient";
 import styles from "./index.module.scss";
 
 /**
@@ -70,32 +70,14 @@ const Toolbar = () => {
 };
 
 /**
- * Final navbar with a gradient background.
- * If `home` is true, this expands the gradient background to cover
- * the background of the hero component
+ * Navbar with a gradient background.
+ * If `collapsed` is true, it uses a smaller static gradient background.
+ * If `collapsed` is false, it uses a larger animated gradient background.
  */
-const Navbar = ({ home = false }: { home?: Boolean }) => {
+const Navbar = ({ collapsed = false }: { collapsed?: Boolean }) => {
   return (
     <div>
-      <div className={styles.gradientContainer}>
-        <Gradient className={styles.gradient} />
-        {home ? (
-          <svg width={0} height={0}>
-            <defs>
-              <clipPath id="gradientClipPath" clipPathUnits="objectBoundingBox">
-                <path
-                  className={styles.gradientPath}
-                  d="M0,0.8 C0.4,1 0.6,0.4 1,0.6 L1,0 L0,0 Z"
-                />
-                <path
-                  className={styles.gradientPathSmall}
-                  d="M0,0.8 C0.4,1 0.6,0.65 1,0.75 L1,0 L0,0 Z"
-                />
-              </clipPath>
-            </defs>
-          </svg>
-        ) : null}
-      </div>
+      {collapsed ? <CollapsedGradient /> : <ExpandedGradient />}
       <Toolbar />
     </div>
   );

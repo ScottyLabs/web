@@ -84,39 +84,3 @@
     box-shadow: $box-shadow;
   }
 }
-
-.gradientContainer {
-  position: absolute;
-  width: 100%;
-  height: 70%;
-
-  @include down($breakpoint-lg) {
-    height: 50%;
-  }
-
-  @include down($breakpoint-md) {
-    height: 45%;
-  }
-
-  @include down($breakpoint-sm) {
-    height: 40%;
-  }
-}
-
-.gradient {
-  clip-path: url("#gradientClipPath");
-}
-
-.gradientPath {
-  @include down($breakpoint-sm) {
-    display: none;
-  }
-}
-
-.gradientPathSmall {
-  display: none;
-
-  @include down($breakpoint-sm) {
-    display: block;
-  }
-}

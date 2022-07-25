@@ -1,9 +1,63 @@
+@import "~/styles/variables.scss";
+@import "~/styles/mixins.scss";
+
 .canvas {
   height: 100%;
   width: 100%;
-  --gradient-color-1: #F60101; 
-  --gradient-color-2: #272A92; 
-  --gradient-color-3: #00E7D6;  
-  --gradient-color-4: #0780BA;
-  --gradient-speed: 0.000003;
+  --gradient-color-1: #{$gradient-color-1};
+  --gradient-color-2: #{$gradient-color-2};
+  --gradient-color-3: #{$gradient-color-3};
+  --gradient-color-4: #{$gradient-color-4};
+  --gradient-speed: #{$gradient-speed};
+}
+
+.staticGradient {
+  position: absolute;
+  width: 100%;
+  height: 5em;
+  background: linear-gradient(90deg, $gradient-color-1, $gradient-color-2);
+
+  @include down($breakpoint-md) {
+    height: 4em;
+  }
+
+  @include down($breakpoint-sm) {
+    height: 3.5em;
+  }
+}
+
+.gradientContainer {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+
+  @include down($breakpoint-lg) {
+    height: 50%;
+  }
+
+  @include down($breakpoint-md) {
+    height: 45%;
+  }
+
+  @include down($breakpoint-sm) {
+    height: 40%;
+  }
+}
+
+.gradient {
+  clip-path: url("#gradientClipPath");
+}
+
+.gradientPath {
+  @include down($breakpoint-sm) {
+    display: none;
+  }
+}
+
+.gradientPathSmall {
+  display: none;
+
+  @include down($breakpoint-sm) {
+    display: block;
+  }
 }
