@@ -9,23 +9,25 @@ import styles from "./index.module.scss";
  * Toolbar containing just the navigation elements without
  * a gradient background
  */
-const Toolbar = () => {
+const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
   const [mobileLinksVisible, setMobileLinksVisible] = useState(false);
 
   return (
     <div className={styles.navbarContainer}>
-      <div className={styles.navICconContainer}>
-        <Link href="/" passHref>
-          <a>
-            <Image
-              className={styles.navIcon}
-              src="/icons/scotty-dog.svg"
-              width={32}
-              height={32}
-              alt="ScottyLabs icon"
-            />
-          </a>
-        </Link>
+      <div>
+        {collapsed ? (
+          <Link href="/" passHref>
+            <a>
+              <Image
+                className={styles.navIcon}
+                src="/icons/scotty-dog.svg"
+                width={32}
+                height={32}
+                alt="ScottyLabs icon"
+              />
+            </a>
+          </Link>
+        ) : null}
       </div>
       <div className={styles.navMobile}>
         <div className={styles.navSandwich}>
@@ -35,19 +37,24 @@ const Toolbar = () => {
           />
         </div>
         {mobileLinksVisible ? (
-          <div className={styles.navLinkContainerMobile}>
-            <Link href="/about" passHref>
-              <a className={`link ${styles.navLink}`}>/about</a>
-            </Link>
-            <Link href="/tech" passHref>
-              <a className={`link ${styles.navLink}`}>/tech</a>
-            </Link>
-            <Link href="/design" passHref>
-              <a className={`link ${styles.navLink}`}>/design</a>
-            </Link>
-            <Link href="/events" passHref>
-              <a className={`link ${styles.navLink}`}>/events</a>
-            </Link>
+          <div
+            className={styles.modalBackground}
+            onClick={() => setMobileLinksVisible(false)}
+          >
+            <div className={styles.navLinkModal}>
+              <Link href="/about" passHref>
+                <a className={`link ${styles.navLink}`}>/about</a>
+              </Link>
+              <Link href="/tech" passHref>
+                <a className={`link ${styles.navLink}`}>/tech</a>
+              </Link>
+              <Link href="/design" passHref>
+                <a className={`link ${styles.navLink}`}>/design</a>
+              </Link>
+              <Link href="/events" passHref>
+                <a className={`link ${styles.navLink}`}>/events</a>
+              </Link>
+            </div>
           </div>
         ) : null}
       </div>

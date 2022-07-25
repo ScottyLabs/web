@@ -29,18 +29,24 @@
 .gradientContainer {
   position: absolute;
   width: 100%;
-  height: 70%;
+  // height: 70%;
+  height: 40vw;
 
   @include down($breakpoint-lg) {
-    height: 50%;
+    // height: 50%;
+    height: 55vw;
   }
 
   @include down($breakpoint-md) {
-    height: 45%;
+    height: 60vw;
   }
 
   @include down($breakpoint-sm) {
-    height: 40%;
+    height: 90vw;
+  }
+
+  @include down($breakpoint-xs) {
+    height: 100vw;
   }
 }
 
@@ -49,15 +55,15 @@
 }
 
 .gradientPath {
-  @include down($breakpoint-sm) {
+  @include down($breakpoint-md) {
     display: none;
   }
 }
 
-.gradientPathSmall {
+.gradientPathSm {
   display: none;
 
-  @include down($breakpoint-sm) {
+  @include down($breakpoint-md) {
     display: block;
   }
 }

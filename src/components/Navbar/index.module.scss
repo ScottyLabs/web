@@ -33,6 +33,10 @@
   align-items: center;
   gap: 5em;
 
+  @include down($breakpoint-md) {
+    gap: 2em;
+  }
+
   @include down($breakpoint-sm) {
     display: none;
   }
@@ -46,6 +50,7 @@
   }
 }
 
+// Navbar elements for mobile screens
 .navMobile {
   display: none;
 
@@ -61,26 +66,40 @@
   color: $text-alt;
 }
 
-.navLinkContainerMobile {
+.modalBackground {
   display: none;
 
   @include down($breakpoint-sm) {
+    display: block;
     position: absolute;
-    z-index: 1;
+    height: 100vh;
+    width: 100vw;
     top: 0;
     right: 0;
-    margin: 3em 3em 0 0;
+    z-index: 1;
+    background-color: $background-color-unfocused;
+  }
+}
+
+.navLinkModal {
+  @include down($breakpoint-sm) {
+    width: 25%;
+    margin: 1em 1em 0 auto;
     padding: $container-padding;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    gap: 3em;
+    gap: 1.5em;
 
     background-color: $text-alt;
     color: $text-primary;
     border-radius: 5px;
     box-shadow: $box-shadow;
+  }
+
+  @include down($breakpoint-xs) {
+    width: 30%;
   }
 }

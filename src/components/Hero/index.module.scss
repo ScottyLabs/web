@@ -27,6 +27,8 @@ $hero-gradient: linear-gradient(#0003, #000a 30%, #000e 60%, #000f 80%);
   width: 25%;
   height: auto;
   mask: $hero-gradient;
+  text-shadow: $text-shadow;
+  box-shadow: $box-shadow;
 
   @include down($breakpoint-sm) {
     flex-direction: column;
@@ -38,6 +40,7 @@ $hero-gradient: linear-gradient(#0003, #000a 30%, #000e 60%, #000f 80%);
   color: $text-alt;
   display: flex;
   mask: $hero-gradient;
+  text-shadow: $text-shadow;
 
   @include down($breakpoint-lg) {
     font-size: $text-size-hero-lg;
@@ -49,5 +52,9 @@ $hero-gradient: linear-gradient(#0003, #000a 30%, #000e 60%, #000f 80%);
 
   @include down($breakpoint-sm) {
     font-size: $text-size-hero-sm;
+  }
+
+  @include down($breakpoint-sm) {
+    font-size: $text-size-hero-xs;
   }
 }

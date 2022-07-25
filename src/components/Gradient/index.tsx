@@ -55,7 +55,7 @@ export const ExpandedGradient = () => {
               d="M0,0.8 C0.4,1 0.6,0.4 1,0.6 L1,0 L0,0 Z"
             />
             <path
-              className={styles.gradientPathSmall}
+              className={styles.gradientPathSm}
               d="M0,0.8 C0.4,1 0.6,0.65 1,0.75 L1,0 L0,0 Z"
             />
           </clipPath>
