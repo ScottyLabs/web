@@ -1,4 +1,5 @@
 @import "~/styles/variables.scss";
+@import "~/styles/mixins.scss";
 
 .header {
   font-size: $text-size-h1;
@@ -17,4 +18,11 @@
 
 .subtitle {
   font-size: $text-size-subtitle;
+
+  @include down($breakpoint-sm) {
+    font-size: $text-size-subtitle-sm;
+  }
+  @include down($breakpoint-xs) {
+    font-size: $text-size-subtitle-xs;
+  }
 }

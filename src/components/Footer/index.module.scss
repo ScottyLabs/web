@@ -6,7 +6,7 @@
   bottom: 0;
 
   width: 100%;
-  height: 20vh;
+  height: 12vw;
   clip-path: url("#footerClipPath");
 
   display: flex;
@@ -21,6 +21,40 @@
     $gradient-color-1,
     $gradient-color-3
   );
+
+  @include down($breakpoint-lg) {
+    height: 20vw;
+  }
+
+  @include down($breakpoint-md) {
+    height: 30vw;
+    gap: 1.5em;
+  }
+
+  @include down($breakpoint-sm) {
+    gap: 1em;
+  }
+
+  @include down($breakpoint-xs) {
+    height: 30vw;
+    gap: 1.3em;
+  }
+}
+
+.gradientPath {
+  display: block;
+
+  @include down($breakpoint-sm) {
+    display: none;
+  }
+}
+
+.gradientPathSm {
+  display: none;
+
+  @include down($breakpoint-sm) {
+    display: block;
+  }
 }
 
 .footerLink {
@@ -43,4 +77,12 @@
   height: 2em;
   width: auto;
   cursor: pointer;
+
+  @include down($breakpoint-md) {
+    height: 1.5em;
+  }
+
+  @include down($breakpoint-sm) {
+    height: 1em;
+  }
 }

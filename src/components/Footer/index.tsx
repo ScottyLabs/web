@@ -46,7 +46,11 @@ const Footer = () => {
           <clipPath id="footerClipPath" clipPathUnits="objectBoundingBox">
             <path
               className={styles.gradientPath}
-              d="M0,0.4 C0.2,0 0.4,1 1,0 L1,1 L0,1 Z"
+              d="M0,0.4 C0.2,0 0.4,0.8 1,0 L1,1 L0,1 Z"
+            />
+            <path
+              className={styles.gradientPathSm}
+              d="M0,0.3 C0.3,0 0.6,0.8 1,0 L1,1 L0,1 Z"
             />
           </clipPath>
         </defs>
