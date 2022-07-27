@@ -4,10 +4,12 @@
 
 Install the dependencies and run the server:
 
-```
+```bash
 npm install
 npm run dev
 ```
+
+After running these commands, you will see the changes on [http://localhost:3000](http://localhost:3000/)
 
 ## Contributing
 
