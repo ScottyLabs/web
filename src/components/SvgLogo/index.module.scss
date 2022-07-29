@@ -1,0 +1,25 @@
+@import "~/styles/variables.scss";
+@import "~/styles/mixins.scss";
+
+.svgIconContainer {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.svgIconContainer:after {
+  padding-top: 83%;
+  display: block;
+  content: '';
+}
+
+.svgIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: -16%;
+  margin-left: -16%;
+  width: 132%;
+}

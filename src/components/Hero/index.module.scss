@@ -24,15 +24,9 @@ $hero-gradient: linear-gradient(#0003, #000a 30%, #000e 60%, #000f 80%);
 }
 
 .heroImage {
-  width: 35%;
-  height: auto;
-  mask: $hero-gradient;
-  text-shadow: $text-shadow;
-  box-shadow: $box-shadow;
-  
-  @include up($breakpoint-sm) {
-    margin-top: -3em;
-    margin-left: -1em;
+  width: 25%;
+  svg {
+    mask: $hero-gradient;
   }
   @include down($breakpoint-sm) {
     flex-direction: column;

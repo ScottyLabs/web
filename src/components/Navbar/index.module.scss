@@ -17,6 +17,7 @@
   width: 50px;
   height: auto;
   color: white;
+  transition: $logo-hover-transition;
 
   @include down($breakpoint-md) {
     width: 30px;
@@ -24,6 +25,7 @@
 }
 
 .navIcon:hover {
+  transition: $logo-hover-transition;
   opacity: 0.7;
 }
 

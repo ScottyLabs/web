@@ -3,6 +3,7 @@ import Image from "next/future/image";
 import Link from "next/link";
 import { useState } from "react";
 import { CollapsedGradient, ExpandedGradient } from "../Gradient";
+import SvgLogo from "../SvgLogo";
 import styles from "./index.module.scss";
 
 /**
@@ -18,13 +19,7 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
         {collapsed ? (
           <Link href="/" passHref>
             <a>
-              <Image
-                className={styles.navIcon}
-                src="/icons/scotty-dog.svg"
-                width={32}
-                height={32}
-                alt="ScottyLabs icon"
-              />
+              <SvgLogo className={styles.navIcon} />
             </a>
           </Link>
         ) : null}
