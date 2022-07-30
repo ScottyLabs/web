@@ -11,7 +11,7 @@ const Hero = () => {
     <div className={styles.heroContainer}>
       <ScottyLabsIcon
         className={styles.heroImage}
-        dropShadow={["1", "1", "10"]}
+        dropShadow={{ dx: 1, dy: 1, stdDeviation: 10 }}
       />
       <Typography className={styles.heroTitle} variant="header">
         ScottyLabs
