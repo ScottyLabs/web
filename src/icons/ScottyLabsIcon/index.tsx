@@ -3,7 +3,11 @@ import styles from "./index.module.scss";
 interface Props {
   blendBackground?: boolean;
   className?: string;
-  dropShadow?: [string, string, string];
+  dropShadow?: {
+    dx?: number;
+    dy?: number;
+    stdDeviation?: number;
+  };
 }
 
 export default function ScottyLabsIcon({
@@ -29,9 +33,9 @@ export default function ScottyLabsIcon({
             height="200%"
           >
             <feDropShadow
-              dx={dropShadow?.[0]}
-              dy={dropShadow?.[1]}
-              stdDeviation={dropShadow?.[2]}
+              dx={`${dropShadow?.dx}`}
+              dy={`${dropShadow?.dy}`}
+              stdDeviation={`${dropShadow?.stdDeviation}`}
               floodOpacity="0.5"
             />
           </filter>
