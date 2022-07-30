@@ -6,7 +6,7 @@ interface Props {
   dropShadow?: [string, string, string];
 }
 
-export default function SvgLogo({
+export default function ScottyLabsIcon({
   blendBackground,
   dropShadow,
   className,
@@ -15,7 +15,6 @@ export default function SvgLogo({
     <div className={className}>
       <div className={styles.svgIconContainer}>
         <svg
-          preserveAspectRatio="true"
           className={styles.svgIcon}
           viewBox="-50 -50 405 355"
           fill="none"

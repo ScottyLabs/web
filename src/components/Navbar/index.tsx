@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/future/image";
 import Link from "next/link";
 import { useState } from "react";
 import { CollapsedGradient, ExpandedGradient } from "../Gradient";
-import SvgLogo from "../SvgLogo";
+import ScottyLabsIcon from "../../icons/ScottyLabsIcon";
 import styles from "./index.module.scss";
 
 /**
@@ -19,7 +18,7 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
         {collapsed ? (
           <Link href="/" passHref>
             <a>
-              <SvgLogo className={styles.navIcon} />
+              <ScottyLabsIcon className={styles.navIcon} />
             </a>
           </Link>
         ) : null}

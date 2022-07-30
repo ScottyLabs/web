@@ -1,4 +1,4 @@
-import SvgLogo from "../SvgLogo";
+import ScottyLabsIcon from "../../icons/ScottyLabsIcon";
 import Typography from "../Typography";
 import styles from "./index.module.scss";
 
@@ -9,7 +9,10 @@ import styles from "./index.module.scss";
 const Hero = () => {
   return (
     <div className={styles.heroContainer}>
-      <SvgLogo className={styles.heroImage} dropShadow={["1", "1", "10"]} />
+      <ScottyLabsIcon
+        className={styles.heroImage}
+        dropShadow={["1", "1", "10"]}
+      />
       <Typography className={styles.heroTitle} variant="header">
         ScottyLabs
       </Typography>
