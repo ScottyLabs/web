@@ -74,9 +74,12 @@
 }
 
 .footerIcon {
-  height: 2em;
-  width: auto;
+  width: 2em;
   cursor: pointer;
+
+  svg {
+    fill: white;
+  }
 
   @include down($breakpoint-md) {
     height: 1.5em;
