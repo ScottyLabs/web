@@ -4,7 +4,7 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html,
 body {
@@ -13,6 +13,14 @@ body {
   font-family: "Albert Sans", sans-serif;
   color: $text-primary;
   font-size: $text-size-body;
+}
+
+body {
+  position: relative;
+
+  @include down($breakpoint-lg) {
+    height: 100vh;
+  }
 }
 
 * {
