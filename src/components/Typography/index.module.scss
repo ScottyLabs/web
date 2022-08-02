@@ -5,15 +5,27 @@
   font-size: $text-size-h1;
   font-weight: bold;
   text-transform: capitalize;
+
+  @include down($breakpoint-sm) {
+    font-size: $text-size-h1-sm;
+  }
 }
 
 .subheader {
   font-size: $text-size-h2;
   font-weight: 500;
+
+  @include down($breakpoint-sm) {
+    font-size: $text-size-h2-sm;
+  }
 }
 
 .body {
   font-size: $text-size-body;
+
+  @include down($breakpoint-sm) {
+    font-size: $text-size-body-sm;
+  }
 }
 
 .subtitle {
