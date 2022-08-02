@@ -1,13 +1,22 @@
 @import "~/styles/variables.scss";
 @import "~/styles/mixins.scss";
 
-.svgIconContainer {
+%baseSvgIconContainer {
   width: 100%;
   display: inline-block;
   position: relative;
-  overflow: hidden;
-  /** This next line is for debugging */
-  // border: 1px solid black;
+}
+
+.svgIconContainer {
+  @extend %baseSvgIconContainer;
+}
+
+.svgIconDebug {
+  @extend %baseSvgIconContainer;
+  border: 1px solid black;
+  svg {
+    border: 1px solid yellow;
+  }
 }
 
 .svgIconContainer:after {

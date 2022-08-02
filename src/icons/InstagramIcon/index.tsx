@@ -3,11 +3,15 @@ import styles from "./index.module.scss";
 
 interface Props {
   className?: string;
+  debugBbox?: boolean;
 }
 
-export default function InstagramIcon({ className }: Props): JSX.Element {
+export default function InstagramIcon({
+  className,
+  debugBbox,
+}: Props): JSX.Element {
   return (
-    <Icon className={className}>
+    <Icon className={className} debugBbox={debugBbox}>
       <svg
         className={styles.InstagramIcon}
         id="Layer_1"

@@ -3,11 +3,15 @@ import styles from "./index.module.scss";
 
 interface Props {
   className?: string;
+  debugBbox?: boolean;
 }
 
-export default function MediumIcon({ className }: Props): JSX.Element {
+export default function MediumIcon({
+  className,
+  debugBbox,
+}: Props): JSX.Element {
   return (
-    <Icon className={className} verticalScale={0.95}>
+    <Icon className={className} verticalScale={0.95} debugBbox={debugBbox}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1043.63 592.71"

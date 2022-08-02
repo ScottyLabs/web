@@ -3,11 +3,15 @@ import styles from "./index.module.scss";
 
 interface Props {
   className?: string;
+  debugBbox?: boolean;
 }
 
-export default function FacebookIcon({ className }: Props): JSX.Element {
+export default function FacebookIcon({
+  className,
+  debugBbox,
+}: Props): JSX.Element {
   return (
-    <Icon className={className}>
+    <Icon className={className} debugBbox={debugBbox}>
       <svg
         className={styles.FacebookIcon}
         version="1.1"
