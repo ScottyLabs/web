@@ -2,8 +2,16 @@ import Icon from "../Icon";
 import styles from "./index.module.scss";
 
 interface Props {
+  /**
+   * Make the icon slightly transparent
+   */
   blendBackground?: boolean;
   className?: string;
+  /**
+   * Show the bounding box of the wrapper in black, and the bounding box of the
+   * inner svg in yellow.
+   */
+  debugBbox?: boolean;
   dropShadow?: {
     dx?: number;
     dy?: number;
@@ -15,9 +23,10 @@ export default function ScottyLabsIcon({
   blendBackground,
   dropShadow,
   className,
+  debugBbox,
 }: Props): JSX.Element {
   return (
-    <Icon className={className} verticalScale={0.83}>
+    <Icon className={className} verticalScale={0.83} debugBbox={debugBbox}>
       <svg
         className={styles.ScottyLabsIcon}
         viewBox="-50 -50 405 355"
