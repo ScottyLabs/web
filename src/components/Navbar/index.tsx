@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useState } from "react";
-import Gradient, { CollapsedGradient, ExpandedGradient } from "../Gradient";
 import ScottyLabsIcon from "../../icons/ScottyLabsIcon";
+import Gradient from "../Gradient";
 import styles from "./index.module.scss";
 
 /**
