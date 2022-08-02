@@ -9,21 +9,24 @@
 .carouselImageContainer {
   position: relative;
   text-align: center;
-  cursor: pointer;
   transition: filter 0.25s;
 }
 
-.carouselImageContainer:hover {
-  & img {
+.carouselImageContainer img {
+  pointer-events: inherit;
+  cursor: pointer;
+
+  &:hover {
     filter: brightness(60%);
   }
 
-  & .carouselImageLabel {
+  &:hover + .carouselImageLabel {
     opacity: 1;
   }
 }
 
 .carouselImageLabel {
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: 50%;
