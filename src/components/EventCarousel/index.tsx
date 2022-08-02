@@ -39,6 +39,9 @@ const images: CarouselImageProps[] = [
   },
 ];
 
+/**
+ * A single image/slide on the carousel, with a label on hover
+ */
 function CarouselImage({ src, width, height, label }: CarouselImageProps) {
   return (
     <div className={styles.carouselImageContainer}>
@@ -58,6 +61,9 @@ function CarouselImage({ src, width, height, label }: CarouselImageProps) {
   );
 }
 
+/**
+ * Swipeable carousel of events on the home page
+ */
 export default function EventCarousel({ className = "" }: Props) {
   const [index, setIndex] = useState(1);
 
