@@ -40,7 +40,7 @@ const FooterLink = ({
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <svg width={0} height={0}>
         <defs>
           <clipPath id="footerClipPath" clipPathUnits="objectBoundingBox">
@@ -90,7 +90,7 @@ const Footer = () => {
         height={39}
         label="Email us!"
       />
-    </div>
+    </footer>
   );
 };
 

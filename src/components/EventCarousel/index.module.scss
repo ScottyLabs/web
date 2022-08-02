@@ -3,35 +3,11 @@
 
 .carouselContainer {
   padding: 10em 0 10em 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carouselWindowRelative {
-  position: relative;
-  height: 30vw;
-}
-
-.carouselWindowContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5vw;
-  width: 180%;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.previewWindow {
-  opacity: 0.7;
+  box-sizing: content-box;
 }
 
 .carouselImage {
-  height: 100%;
-  width: 100%;
+  height: auto;
   box-shadow: $box-shadow;
   aspect-ratio: 16 / 9;
 
@@ -42,7 +18,7 @@
 
 .navigator {
   width: 30%;
-  margin: 5% auto 0 auto;
+  margin: 2em auto 0 auto;
 
   display: flex;
   gap: 0.5em;

@@ -8,6 +8,7 @@
 
 html,
 body {
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   font-family: "Albert Sans", sans-serif;
@@ -16,17 +17,18 @@ body {
 }
 
 body {
-  position: relative;
+  // position: relative;
 
-  @include down($breakpoint-lg) {
-    height: 100vh;
-  }
+  // @include down($breakpoint-lg) {
+  //   height: 100vh;
+  // }
 }
 
 * {
   box-sizing: border-box;
 }
 
+// Links with animated underline on hover
 .link {
   color: $text-primary;
   text-decoration: none;
@@ -60,4 +62,19 @@ body {
     right: auto;
     width: 100%;
   }
+}
+
+// react-responsive-carousel style overrides
+.carousel {
+  overflow-y: visible !important;
+}
+
+.carousel .slider-wrapper {
+  overflow-y: visible !important;
+  padding-bottom: 1em;
+}
+
+.carousel .slider-wrapper .slide img {
+  width: 80%;
+  margin: 0 auto 0 auto;
 }

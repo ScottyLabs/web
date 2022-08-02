@@ -1,0 +1,69 @@
+@import "~/styles/variables.scss";
+@import "~/styles/mixins.scss";
+
+.carouselContainer {
+  padding: 20em 0 20em 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+.carouselWindowRelative {
+  position: relative;
+  height: 30vw;
+}
+
+.carouselWindowContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5vw;
+  width: 300%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  // transition: transform 500ms;
+}
+
+.previewWindow {
+  opacity: 0.7;
+}
+
+.carouselImage {
+  height: 100%;
+  width: 100%;
+  box-shadow: $box-shadow;
+  aspect-ratio: 16 / 9;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigator {
+  width: 30%;
+  margin: 5em auto 0 auto;
+
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+.navCircle {
+  cursor: pointer;
+  height: 0.5em;
+
+  @include down($breakpoint-sm) {
+    height: 0.3em;
+  }
+}
+
+.navCircleFocused {
+  color: $carousel-circle-focused;
+}
+
+.navCircleUnfocused {
+  color: $carousel-circle-unfocused;
+}

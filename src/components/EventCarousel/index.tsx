@@ -1,8 +1,14 @@
-import styles from "./index.module.scss";
-import Image from "next/future/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/future/image";
 import { useState } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import styles from "./index.module.scss";
+
+interface Props {
+  className?: string;
+}
 
 interface CarouselImageProps {
   src: string;
@@ -25,7 +31,7 @@ const images: CarouselImageProps[] = [
     height: 444,
   },
   {
-    src: "/events/wdw.png",
+    src: "/events/wdw.jpg",
     label: "Web Dev Weekend",
     width: 1640,
     height: 624,
@@ -35,6 +41,7 @@ const images: CarouselImageProps[] = [
 function CarouselImage({ src, width, height, label }: CarouselImageProps) {
   return (
     <Image
+      priority={true}
       key={label}
       src={src}
       alt={label}
@@ -45,24 +52,27 @@ function CarouselImage({ src, width, height, label }: CarouselImageProps) {
   );
 }
 
-export default function Carousel({ className = "" }: { className?: string }) {
-  const [index, setIndex] = useState(0);
+export default function EventCarousel({ className = "" }: Props) {
+  const [index, setIndex] = useState(1);
 
   return (
     <div className={`${styles.carouselContainer} ${className}`}>
-      <div className={styles.carouselWindowRelative}>
-        <div className={styles.carouselWindowContainer}>
-          <div className={styles.previewWindow}>
-            <CarouselImage {...images[index % images.length]} />
-          </div>
-          <div className={styles.focusWindow}>
-            <CarouselImage {...images[(index + 1) % images.length]} />
-          </div>
-          <div className={styles.previewWindow}>
-            <CarouselImage {...images[(index + 2) % images.length]} />
-          </div>
-        </div>
-      </div>
+      <Carousel
+        selectedItem={index}
+        centerMode={true}
+        swipeable={true}
+        emulateTouch={true}
+        showThumbs={false}
+        showArrows={false}
+        showStatus={false}
+        showIndicators={false}
+        centerSlidePercentage={60}
+        onChange={(index) => setIndex(index)}
+      >
+        {images.map((imageProps, index) => (
+          <CarouselImage key={index} {...imageProps} />
+        ))}
+      </Carousel>
       <div className={styles.navigator}>
         {images.map((_, circleIndex) => {
           const focused = circleIndex == index;
@@ -75,7 +85,9 @@ export default function Carousel({ className = "" }: { className?: string }) {
               key={circleIndex}
               icon={faCircle}
               className={`${styles.navCircle} ${focusClass}`}
-              onClick={() => setIndex(circleIndex)}
+              onClick={() => {
+                setIndex(circleIndex);
+              }}
             />
           );
         })}
