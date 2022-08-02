@@ -4,6 +4,7 @@ import Image from "next/future/image";
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Typography from "../Typography";
 import styles from "./index.module.scss";
 
 interface Props {
@@ -40,15 +41,20 @@ const images: CarouselImageProps[] = [
 
 function CarouselImage({ src, width, height, label }: CarouselImageProps) {
   return (
-    <Image
-      priority={true}
-      key={label}
-      src={src}
-      alt={label}
-      width={width}
-      height={height}
-      className={styles.carouselImage}
-    />
+    <div className={styles.carouselImageContainer}>
+      <Image
+        priority={true}
+        key={label}
+        src={src}
+        alt={label}
+        width={width}
+        height={height}
+        className={styles.carouselImage}
+      />
+      <div className={styles.carouselImageLabel}>
+        <Typography variant="header">{label}</Typography>
+      </div>
+    </div>
   );
 }
 

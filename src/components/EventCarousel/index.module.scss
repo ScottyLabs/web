@@ -6,6 +6,36 @@
   box-sizing: content-box;
 }
 
+.carouselImageContainer {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: filter 0.25s;
+}
+
+.carouselImageContainer:hover {
+  & img {
+    filter: brightness(60%);
+  }
+
+  & .carouselImageLabel {
+    opacity: 1;
+  }
+}
+
+.carouselImageLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: $text-alt;
+  text-shadow: $text-shadow;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .carouselImage {
   height: auto;
   box-shadow: $box-shadow;
@@ -14,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: filter 0.5s;
 }
 
 .navigator {
