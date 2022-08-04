@@ -1,4 +1,4 @@
-import Icon from "../Icon";
+import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
 
 interface Props {
@@ -15,7 +15,7 @@ export default function FigmaIcon({
   debugBbox,
 }: Props): JSX.Element {
   return (
-    <Icon className={className} debugBbox={debugBbox}>
+    <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
         viewBox="0 0 38 57"
         fill="none"
@@ -50,6 +50,6 @@ export default function FigmaIcon({
           </clipPath>
         </defs>
       </svg>
-    </Icon>
+    </BaseIcon>
   );
 }

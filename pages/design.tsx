@@ -7,8 +7,11 @@ import ProjectTimeline from "../src/components/ProjectTimeline";
 import Typography from "../src/components/Typography";
 import AfterEffectsIcon from "../src/icons/AfterEffectsIcon";
 import FigmaIcon from "../src/icons/FigmaIcon";
+import Icon from "../src/icons/Icon";
 import IllustratorIcon from "../src/icons/IllustratorIcon";
 import ProcreateIcon from "../src/icons/ProcreateIcon";
+import ReactIcon from "../src/icons/ReactIcon";
+import TypeScriptIcon from "../src/icons/TypeScriptIcon";
 import BaseLayout from "../src/layouts/BaseLayout";
 import styles from "../styles/Design.module.scss";
 
@@ -30,7 +33,7 @@ export default function Design() {
             <AfterEffectsIcon className={styles.softwareIcon} />
           </div>
           <ProjectTimeline>
-            <Project title="Branding" />
+            <Project title="Branding" softwareIcons={["typescript", "react"]} />
           </ProjectTimeline>
         </div>
       </div>

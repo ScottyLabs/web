@@ -1,39 +1,47 @@
-import styles from "./index.module.scss";
+import AfterEffectsIcon from "../AfterEffectsIcon";
+import FacebookIcon from "../FacebookIcon";
+import FigmaIcon from "../FigmaIcon";
+import IllustratorIcon from "../IllustratorIcon";
+import InstagramIcon from "../InstagramIcon";
+import MailIcon from "../MailIcon";
+import MattermostIcon from "../MattermostIcon";
+import MediumIcon from "../MediumIcon";
+import ProcreateIcon from "../ProcreateIcon";
+import ReactIcon from "../ReactIcon";
+import ScottyLabsIcon from "../ScottyLabsIcon";
+import TypeScriptIcon from "../TypeScriptIcon";
+
+const IconMapping = {
+  "after-effects": <AfterEffectsIcon />,
+  facebook: <FacebookIcon />,
+  figma: <FigmaIcon />,
+  illustrator: <IllustratorIcon />,
+  instagram: <InstagramIcon />,
+  mail: <MailIcon />,
+  mattermost: <MattermostIcon />,
+  medium: <MediumIcon />,
+  procreate: <ProcreateIcon />,
+  react: <ReactIcon />,
+  scottylabs: <ScottyLabsIcon />,
+  typescript: <TypeScriptIcon />,
+};
+
+export type IconName = keyof typeof IconMapping;
 
 interface Props {
-  children: JSX.Element;
   className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-  /**
-   * The height as a percentage of the width in decimal 0 is 0% and 1 is 100%.
-   * For example, a square would have this at 1.
-   */
-  verticalScale?: number;
+  name: IconName;
 }
 
 /**
- * Generic Icon wrapper which can be used to encapsulate arbitrary images in a
- * fixed-size container.
+ * Wrap an element to inject props
  */
-export default function Icon({
-  children,
-  className,
-  debugBbox,
-  verticalScale = 1,
-}: Props): JSX.Element {
-  const verticalSize = `${verticalScale * 100}%`;
-  return (
-    <div className={className}>
-      <div
-        className={debugBbox ? styles.svgIconDebug : styles.svgIconContainer}
-        style={{ paddingTop: verticalSize }}
-      >
-        {children}
-      </div>
-    </div>
-  );
+function wrapProps(icon: JSX.Element) {
+  return function PropIcon(props: any) {
+    return <icon.type {...icon.props} {...props} />;
+  };
+}
+
+export default function Icon({ className, name }: Props) {
+  return wrapProps(IconMapping[name])({ className });
 }

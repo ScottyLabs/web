@@ -1,4 +1,4 @@
-import Icon from "../Icon";
+import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
 
 interface Props {
@@ -15,7 +15,7 @@ export default function InstagramIcon({
   debugBbox,
 }: Props): JSX.Element {
   return (
-    <Icon className={className} debugBbox={debugBbox}>
+    <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
         className={styles.centeredIcon}
         id="Layer_1"
@@ -28,6 +28,6 @@ export default function InstagramIcon({
           transform="translate(-2.5 -2.5)"
         />
       </svg>
-    </Icon>
+    </BaseIcon>
   );
 }

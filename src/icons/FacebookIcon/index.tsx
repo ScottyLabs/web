@@ -1,4 +1,4 @@
-import Icon from "../Icon";
+import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
 
 interface Props {
@@ -15,7 +15,7 @@ export default function FacebookIcon({
   debugBbox,
 }: Props): JSX.Element {
   return (
-    <Icon className={className} debugBbox={debugBbox}>
+    <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
         className={styles.centeredIcon}
         version="1.1"
@@ -35,6 +35,6 @@ export default function FacebookIcon({
           </g>
         </g>
       </svg>
-    </Icon>
+    </BaseIcon>
   );
 }

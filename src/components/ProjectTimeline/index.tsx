@@ -1,11 +1,10 @@
-import { ReactElement } from "react";
-import Project from "../Project";
+import type { ReactNode } from "react";
 
 interface Props {
   className?: string;
-  children?: ReactElement | ReactElement[];
+  children?: ReactNode;
 }
 
-export default function ProjectTimeline({ className = "", children }: Props) {
+export default function ProjectTimeline({ className, children }: Props) {
   return <div>{children}</div>;
 }

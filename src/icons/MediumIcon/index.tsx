@@ -1,4 +1,4 @@
-import Icon from "../Icon";
+import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
 
 interface Props {
@@ -15,7 +15,7 @@ export default function MediumIcon({
   debugBbox,
 }: Props): JSX.Element {
   return (
-    <Icon className={className} verticalScale={0.95} debugBbox={debugBbox}>
+    <BaseIcon className={className} verticalScale={0.95} debugBbox={debugBbox}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1043.63 592.71"
@@ -29,6 +29,6 @@ export default function MediumIcon({
           </g>
         </g>
       </svg>
-    </Icon>
+    </BaseIcon>
   );
 }

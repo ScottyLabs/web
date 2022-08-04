@@ -1,4 +1,4 @@
-import Icon from "../Icon";
+import BaseIcon from "../BaseIcon";
 import styles from "./index.module.scss";
 
 interface Props {
@@ -26,7 +26,7 @@ export default function ScottyLabsIcon({
   debugBbox,
 }: Props): JSX.Element {
   return (
-    <Icon className={className} verticalScale={0.83} debugBbox={debugBbox}>
+    <BaseIcon className={className} verticalScale={0.83} debugBbox={debugBbox}>
       <svg
         className={styles.ScottyLabsIcon}
         viewBox="-50 -50 405 355"
@@ -76,6 +76,6 @@ export default function ScottyLabsIcon({
           />
         </g>
       </svg>
-    </Icon>
+    </BaseIcon>
   );
 }

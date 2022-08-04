@@ -1,4 +1,4 @@
-import Icon from "../Icon";
+import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
 
 interface Props {
@@ -15,7 +15,7 @@ export default function ProcreateIcon({
   debugBbox,
 }: Props): JSX.Element {
   return (
-    <Icon className={className} debugBbox={debugBbox}>
+    <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="5 5 37 37"
@@ -126,6 +126,6 @@ export default function ProcreateIcon({
           d="M33.71,22.86c-1.61,0.98-4,2.08-8.1,2.86C25.1,25.82,24.56,25.91,24,26	c-4.02,0.62-7.66,1.81-10.32,4.64c-0.38,0.4-0.73,0.84-1.07,1.31C11.48,33.52,10.59,35.5,10,38c0-0.19,0-0.38,0.01-0.57	c0.14-4.17,1.91-8.96,7.32-12.26c1.57-0.96,3.44-1.79,5.67-2.44c0.94-0.28,1.93-0.52,3-0.73c4.93-0.97,7.77-2.79,9.39-4.76	c2.58-3.11,2.11-6.57,2.11-7.49C38.26,12.02,38.44,18.02,33.71,22.86z"
         />
       </svg>
-    </Icon>
+    </BaseIcon>
   );
 }
