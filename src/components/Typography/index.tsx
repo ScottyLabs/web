@@ -8,7 +8,7 @@ const Typography = ({
   className = "",
 }: {
   variant?: TypographyVariant;
-  children: string;
+  children?: string;
   className?: String;
 }) => {
   return <div className={`${className} ${styles[variant]}`}>{children}</div>;

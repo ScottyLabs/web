@@ -1,3 +1,4 @@
+import wrapProps from "../../utils/wrapProps";
 import AfterEffectsIcon from "../AfterEffectsIcon";
 import FacebookIcon from "../FacebookIcon";
 import FigmaIcon from "../FigmaIcon";
@@ -31,15 +32,6 @@ export type IconName = keyof typeof IconMapping;
 interface Props {
   className?: string;
   name: IconName;
-}
-
-/**
- * Wrap an element to inject props
- */
-function wrapProps(icon: JSX.Element) {
-  return function PropIcon(props: any) {
-    return <icon.type {...icon.props} {...props} />;
-  };
 }
 
 export default function Icon({ className, name }: Props) {

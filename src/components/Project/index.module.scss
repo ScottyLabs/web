@@ -1,2 +1,50 @@
 @import "~/styles/variables.scss";
 @import "~/styles/mixins.scss";
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.softwareIconContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.softwareIcon {
+  height: 32px;
+  width: 32px;
+
+  @include down($breakpoint-sm) {
+    height: 48px;
+    width: 48px;
+  }
+
+  @include down($breakpoint-xs) {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+.description {
+  margin-top: 1em;
+}
+
+.projectImageContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.projectImage {
+  height: 20em;
+  width: auto;
+  box-shadow: $box-shadow;
+}

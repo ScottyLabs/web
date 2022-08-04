@@ -1,17 +1,11 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Footer from "../src/components/Footer";
-import Navbar from "../src/components/Navbar";
+import Image from "next/future/image";
 import Project from "../src/components/Project";
 import ProjectTimeline from "../src/components/ProjectTimeline";
 import Typography from "../src/components/Typography";
 import AfterEffectsIcon from "../src/icons/AfterEffectsIcon";
 import FigmaIcon from "../src/icons/FigmaIcon";
-import Icon from "../src/icons/Icon";
 import IllustratorIcon from "../src/icons/IllustratorIcon";
 import ProcreateIcon from "../src/icons/ProcreateIcon";
-import ReactIcon from "../src/icons/ReactIcon";
-import TypeScriptIcon from "../src/icons/TypeScriptIcon";
 import BaseLayout from "../src/layouts/BaseLayout";
 import styles from "../styles/Design.module.scss";
 
@@ -32,10 +26,24 @@ export default function Design() {
             <ProcreateIcon className={styles.softwareIcon} />
             <AfterEffectsIcon className={styles.softwareIcon} />
           </div>
-          <ProjectTimeline>
-            <Project title="Branding" softwareIcons={["typescript", "react"]} />
-          </ProjectTimeline>
         </div>
+        <ProjectTimeline className={styles.projectTimeline}>
+          <Project
+            title="Branding"
+            softwareIcons={["typescript", "react"]}
+            description={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+            image={
+              <Image
+                src="/tech/course-tool.jpg"
+                width={1600}
+                height={900}
+                alt="Course tool"
+              />
+            }
+          />
+        </ProjectTimeline>
       </div>
     </BaseLayout>
   );

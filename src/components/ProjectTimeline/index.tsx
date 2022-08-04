@@ -6,5 +6,5 @@ interface Props {
 }
 
 export default function ProjectTimeline({ className, children }: Props) {
-  return <div>{children}</div>;
+  return <div className={className}>{children}</div>;
 }
