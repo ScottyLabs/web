@@ -5,7 +5,7 @@ import Navbar from "../../components/Navbar";
 import styles from "./index.module.scss";
 
 interface Props {
-  children?: ReactNode | ReactNode[];
+  children?: ReactNode;
   collapsedNavBar?: boolean;
 }
 
