@@ -42,9 +42,9 @@ export default function ScottyLabsIcon({
           height="200%"
         >
           <feDropShadow
-            dx={`${dropShadow?.dx}`}
-            dy={`${dropShadow?.dy}`}
-            stdDeviation={`${dropShadow?.stdDeviation}`}
+            dx={dropShadow?.dx}
+            dy={dropShadow?.dy}
+            stdDeviation={dropShadow?.stdDeviation}
             floodOpacity="0.5"
           />
         </filter>
