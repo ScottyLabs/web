@@ -1,2 +1,27 @@
 @import "~/styles/variables.scss";
 @import "~/styles/mixins.scss";
+
+.projectRow {
+  border-left: solid black 3px;
+  padding: 3em;
+  position: relative;
+}
+
+:is(.circleTop, .circleBottom) {
+  height: 2em;
+  width: 2em;
+  position: absolute;
+  background-color: $background-color;
+}
+
+.circleTop {
+  top: 0;
+  left: 0;
+  transform: translate(-53%, 0);
+}
+
+.circleBottom {
+  bottom: 0;
+  left: 0;
+  transform: translate(-53%, 0);
+}
