@@ -10,7 +10,7 @@ import IllustratorIcon from "../src/icons/IllustratorIcon";
 import ProcreateIcon from "../src/icons/ProcreateIcon";
 import styles from "../styles/Design.module.scss";
 
-const Home: NextPage = () => {
+const Design: NextPage = () => {
   return (
     <>
       <Head>
@@ -45,4 +45,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Design;
