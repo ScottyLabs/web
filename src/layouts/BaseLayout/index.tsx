@@ -1,19 +1,22 @@
 import Head from "next/head";
-import { ReactElement } from "react";
+import type { ReactNode } from "react";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import styles from "./index.module.scss";
 
 interface Props {
-  children?: ReactElement | ReactElement[];
-  collapsedNavBar?: Boolean;
+  children?: ReactNode | ReactNode[];
+  collapsedNavBar?: boolean;
 }
 
 /**
  * The base layout which includes the ScottyLabs header,
  * a navbar, and a footer
  */
-const BaseLayout = ({ children, collapsedNavBar = true }: Props) => {
+export default function BaseLayout({
+  children,
+  collapsedNavBar = true,
+}: Props) {
   return (
     <>
       <Head>
@@ -30,6 +33,4 @@ const BaseLayout = ({ children, collapsedNavBar = true }: Props) => {
       </div>
     </>
   );
-};
-
-export default BaseLayout;
+}
