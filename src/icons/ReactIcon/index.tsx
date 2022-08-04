@@ -16,7 +16,11 @@ export default function ReactIcon({
 }: Props): JSX.Element {
   return (
     <BaseIcon className={className} debugBbox={debugBbox}>
-      <svg xmlns="http://www.w3.org/2000/svg" className={styles.centeredIcon}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 80 80"
+        className={styles.centeredIcon}
+      >
         <path
           fill="#61DAFB"
           d="M46.5 40c0 3.593-2.907 6.5-6.5 6.5s-6.5-2.907-6.5-6.5 2.907-6.5 6.5-6.5 6.5 2.907 6.5 6.5z"

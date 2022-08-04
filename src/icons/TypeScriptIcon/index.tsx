@@ -16,7 +16,11 @@ export default function TypeScriptIcon({
 }: Props): JSX.Element {
   return (
     <BaseIcon className={className} debugBbox={debugBbox}>
-      <svg xmlns="http://www.w3.org/2000/svg" className={styles.centeredIcon}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 48 48"
+        className={styles.centeredIcon}
+      >
         <path fill="#1976d2" d="M6 6h36v36H6z" />
         <path
           fill="#fff"
