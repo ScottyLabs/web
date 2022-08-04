@@ -1,5 +1,5 @@
 import Icon from "../Icon";
-import styles from "./index.module.scss";
+import styles from "../styles/index.module.scss";
 
 interface Props {
   className?: string;
@@ -19,7 +19,7 @@ export default function MediumIcon({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1043.63 592.71"
-        className={styles.MediumIcon}
+        className={styles.centeredIcon}
       >
         <g id="Layer_2" data-name="Layer 2">
           <g id="Layer_1-2" data-name="Layer 1">

@@ -1,5 +1,5 @@
 import Icon from "../Icon";
-import styles from "./index.module.scss";
+import styles from "../styles/index.module.scss";
 
 interface Props {
   className?: string;
@@ -19,7 +19,7 @@ export default function ProcreateIcon({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="5 5 37 37"
-        className={styles.ProcreateIcon}
+        className={styles.centeredIcon}
       >
         <linearGradient
           id="hwXs5fyLq3QRoGd3KY8gYa"

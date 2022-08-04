@@ -1,5 +1,5 @@
 import Icon from "../Icon";
-import styles from "./index.module.scss";
+import styles from "../styles/index.module.scss";
 
 interface Props {
   className?: string;
@@ -19,7 +19,7 @@ export default function IllustratorIcon({
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 511.45 498.66"
-        className={styles.IllustratorIcon}
+        className={styles.centeredIcon}
       >
         <defs>
           <style>{".b{fill:#ff9a00}"}</style>
