@@ -20,7 +20,6 @@ export default function BaseLayout({
   return (
     <>
       <Head>
-        {"<!-- Primary Meta Tags -->"}
         <title>ScottyLabs</title>
         <meta name="title" content="ScottyLabs" />
         <meta
@@ -28,7 +27,6 @@ export default function BaseLayout({
           content="ScottyLabs a community of passionate, interdisciplinary leaders that use design and technology to achieve more."
         />
 
-        {"<!-- Open Graph / Facebook -->"}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://scottylabs.org/" />
         <meta property="og:title" content="ScottyLabs" />
@@ -38,7 +36,6 @@ export default function BaseLayout({
         />
         <meta property="og:image" content="/scottylabs-preview.png" />
 
-        {"<!-- Twitter -->"}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://scottylabs.org/" />
         <meta property="twitter:title" content="ScottyLabs" />
