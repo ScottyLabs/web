@@ -3,18 +3,27 @@
 
 .roundButton {
   width: fit-content;
-  border: solid black 1px;
-  border-radius: calc($text-size-body + 5px);
-  padding: 5px 10px 5px 10px;
+  border-radius: $text-size-button;
+  padding: 10px 15px 10px 15px;
   cursor: pointer;
-  transition: background-color 0.25s;
+  transition: filter 0.1s;
+  background-color: $accent-color-primary;
+  color: $text-alt;
+
+  @include down($breakpoint-md) {
+    padding: 5px 10px 5px 10px;
+  }
 }
 
 .roundButton:hover {
-  background-color: $carousel-circle-unfocused;
+  filter: brightness(120%);
 }
 
 .link {
   text-decoration: none;
   color: $text-primary;
+}
+
+.buttonLabel {
+  font-weight: 500;
 }

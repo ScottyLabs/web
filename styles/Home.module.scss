@@ -13,7 +13,7 @@
   }
 
   @include down($breakpoint-sm) {
-    margin-top: 8em;
+    margin-top: 10em;
     gap: 3em;
   }
 }

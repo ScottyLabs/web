@@ -19,7 +19,9 @@ export default function RoundButton({
     <Link href={href ?? "#"} passHref>
       <a target="_blank" className={styles.link}>
         <div className={`${styles.roundButton} ${className}`} onClick={onClick}>
-          <Typography variant="body">{label}</Typography>
+          <Typography variant="button" className={styles.buttonLabel}>
+            {label}
+          </Typography>
         </div>
       </a>
     </Link>

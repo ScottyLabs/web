@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.involvementSection}>
-          <RoundButton label="Get involved" href="https://google.com/" />
+          <RoundButton label="Get involved" href="#" />
           <div className={styles.meetingTimes}>
             <Typography>Weekly meetings: Thursday, 7pm</Typography>
             <Typography>Tech: Saturday, 2pm</Typography>
