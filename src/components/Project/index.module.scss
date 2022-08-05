@@ -2,9 +2,15 @@
 @import "~/styles/mixins.scss";
 
 .projectContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 3em;
+
+  @include down($breakpoint-lg) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1em;
+  }
 }
 
 .projectDetails {
@@ -22,13 +28,8 @@
   width: 32px;
 
   @include down($breakpoint-sm) {
-    height: 48px;
-    width: 48px;
-  }
-
-  @include down($breakpoint-xs) {
-    height: 36px;
-    width: 36px;
+    height: 25px;
+    width: 25px;
   }
 }
 
@@ -47,4 +48,12 @@
   height: 20em;
   width: auto;
   box-shadow: $box-shadow;
+
+  @include down($breakpoint-lg) {
+    height: 15em;
+  }
+
+  @include down($breakpoint-sm) {
+    height: 10em;
+  }
 }

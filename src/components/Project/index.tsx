@@ -41,9 +41,9 @@ export default function Project({
         </Typography>
       </div>
       <div className={styles.projectImageContainer}>
-        <Show when={image != null}>
-          {wrapProps(image as JSX.Element)({ className: styles.projectImage })}
-        </Show>
+        {image != null
+          ? wrapProps(image as JSX.Element)({ className: styles.projectImage })
+          : null}
       </div>
     </div>
   );

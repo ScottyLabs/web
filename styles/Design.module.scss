@@ -11,6 +11,10 @@
 .pageContent {
   width: 80%;
   margin: 3em auto 0 auto;
+
+  @include down($breakpoint-sm) {
+    width: 90%;
+  }
 }
 
 .aboutSection {
