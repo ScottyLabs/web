@@ -1,0 +1,20 @@
+@import "~/styles/variables.scss";
+@import "~/styles/mixins.scss";
+
+.roundButton {
+  width: fit-content;
+  border: solid black 1px;
+  border-radius: calc($text-size-body + 5px);
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.roundButton:hover {
+  background-color: $carousel-circle-unfocused;
+}
+
+.link {
+  text-decoration: none;
+  color: $text-primary;
+}
