@@ -14,8 +14,8 @@ export default function Home() {
         <div className={styles.aboutContainer}>
           <Image
             src="/club-photo.jpg"
-            height={756}
-            width={1008}
+            height={1512}
+            width={2016}
             alt="Organization chart"
             className={styles.orgChart}
           />
