@@ -20,14 +20,33 @@ export default function BaseLayout({
   return (
     <>
       <Head>
+        {"<!-- Primary Meta Tags -->"}
         <title>ScottyLabs</title>
-        <meta name="og:title" content="ScottyLabs" />
+        <meta name="title" content="ScottyLabs" />
         <meta
-          name="og:description"
+          name="description"
           content="ScottyLabs a community of passionate, interdisciplinary leaders that use design and technology to achieve more."
         />
-        <meta name="og:type" content="website" />
-        <meta name="og:image" content="/scottylabs-preview.png" />
+
+        {"<!-- Open Graph / Facebook -->"}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://scottylabs.org/" />
+        <meta property="og:title" content="ScottyLabs" />
+        <meta
+          property="og:description"
+          content="ScottyLabs a community of passionate, interdisciplinary leaders that use design and technology to achieve more."
+        />
+        <meta property="og:image" content="/scottylabs-preview.png" />
+
+        {"<!-- Twitter -->"}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://scottylabs.org/" />
+        <meta property="twitter:title" content="ScottyLabs" />
+        <meta
+          property="twitter:description"
+          content="ScottyLabs a community of passionate, interdisciplinary leaders that use design and technology to achieve more."
+        />
+        <meta property="twitter:image" content="/scottylabs-preview.png" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <div className={styles.pageContainer}>
