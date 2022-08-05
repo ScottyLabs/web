@@ -21,7 +21,13 @@ export default function BaseLayout({
     <>
       <Head>
         <title>ScottyLabs</title>
-        <meta name="description" content="ScottyLabs" />
+        <meta name="og:title" content="ScottyLabs" />
+        <meta
+          name="og:description"
+          content="ScottyLabs a community of passionate, interdisciplinary leaders that use design and technology to achieve more."
+        />
+        <meta name="og:type" content="website" />
+        <meta name="og:image" content="/scottylabs-preview.png" />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <div className={styles.pageContainer}>
