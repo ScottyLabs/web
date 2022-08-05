@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import EventCarousel from "../src/components/EventCarousel";
 import Hero from "../src/components/Hero";
 import RoundButton from "../src/components/RoundButton";
@@ -25,13 +25,14 @@ export default function Home() {
               applications and services for the campus community.
             </Typography>
           </div>
-          <Image
-            src="/club-photo.jpg"
-            height={1512}
-            width={2016}
-            alt="Organization chart"
-            className={styles.orgChart}
-          />
+          <div className={styles.clubPhotoContainer}>
+            <Image
+              src="/club-photo.jpg"
+              width={2016}
+              height={1512}
+              alt="Organization chart"
+            />
+          </div>
         </div>
         <div className={styles.involvementSection}>
           <RoundButton label="Get involved" href="#" />

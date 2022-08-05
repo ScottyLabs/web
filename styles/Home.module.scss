@@ -30,13 +30,16 @@
   }
 }
 
-.orgChart {
-  aspect-ratio: 4032 / 3024;
-  width: 40rem;
-  height: auto;
-  box-shadow: $box-shadow;
-  border-radius: 10px;
-
+.clubPhotoContainer {
+  padding: 10px; // same as the spread of the box shadow
+  width: 58%;
+  span {
+    overflow: visible !important;
+  }
+  img {
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+  }
   @include down($breakpoint-lg) {
     width: 100%;
   }
@@ -53,7 +56,14 @@
 .about {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 42%;
   gap: 1em;
+
+  @include down($breakpoint-lg) {
+    width: 100%;
+  }
 }
 
 .involvementSection {
