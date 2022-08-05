@@ -12,13 +12,6 @@ export default function Home() {
       <Hero />
       <main className={styles.infoContainer}>
         <div className={styles.aboutContainer}>
-          <Image
-            src="/club-photo.jpg"
-            height={1512}
-            width={2016}
-            alt="Organization chart"
-            className={styles.orgChart}
-          />
           <div className={styles.about}>
             <Typography variant="header" className={styles.aboutHeading}>
               What we do
@@ -32,6 +25,13 @@ export default function Home() {
               applications and services for the campus community.
             </Typography>
           </div>
+          <Image
+            src="/club-photo.jpg"
+            height={1512}
+            width={2016}
+            alt="Organization chart"
+            className={styles.orgChart}
+          />
         </div>
         <div className={styles.involvementSection}>
           <RoundButton label="Get involved" href="#" />

@@ -6,7 +6,7 @@
   border-radius: $text-size-button;
   padding: 10px 15px 10px 15px;
   cursor: pointer;
-  transition: filter 0.1s;
+  transition: background-color 0.2s;
   background-color: $accent-color-primary;
   color: $text-alt;
 
@@ -16,7 +16,7 @@
 }
 
 .roundButton:hover {
-  filter: brightness(120%);
+  background-color: $accent-color-darker;
 }
 
 .link {
