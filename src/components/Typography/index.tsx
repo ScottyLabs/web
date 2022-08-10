@@ -1,6 +1,12 @@
 import styles from "./index.module.scss";
 
-export type TypographyVariant = "header" | "subheader" | "body" | "subtitle";
+export type TypographyVariant =
+  | "hero"
+  | "header"
+  | "subheader"
+  | "body"
+  | "subtitle"
+  | "button";
 
 const Typography = ({
   variant = "body",

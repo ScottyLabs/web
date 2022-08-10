@@ -4,6 +4,7 @@
 .footer {
   bottom: 0;
 
+  margin-top: 5em;
   width: 100%;
   height: 12vw;
   clip-path: url("#footerClipPath");
@@ -31,6 +32,7 @@
   }
 
   @include down($breakpoint-sm) {
+    margin-top: 0em;
     gap: 1em;
   }
 

@@ -23,7 +23,7 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
           </Link>
         ) : null}
       </div>
-      <div className={styles.navMobile}>
+      {/* <div className={styles.navMobile}>
         <div className={styles.navSandwich}>
           <FontAwesomeIcon
             icon="bars"
@@ -65,7 +65,7 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
         <Link href="/events" passHref>
           <a className={`link ${styles.navLink}`}>/events</a>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

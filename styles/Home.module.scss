@@ -1,0 +1,81 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.infoContainer {
+  margin: 13em auto 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+
+  @include down($breakpoint-lg) {
+    width: 90%;
+  }
+
+  @include down($breakpoint-sm) {
+    margin-top: 10em;
+    gap: 3em;
+  }
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5em;
+
+  @include down($breakpoint-lg) {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+.clubPhotoContainer {
+  padding: 10px; // same as the spread of the box shadow
+  width: 58%;
+  span {
+    overflow: visible !important;
+  }
+  img {
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+  }
+  @include down($breakpoint-lg) {
+    width: 100%;
+  }
+}
+
+.aboutHeading {
+  font-weight: bold;
+
+  @include down($breakpoint-lg) {
+    text-align: center;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 42%;
+  gap: 1em;
+
+  @include down($breakpoint-lg) {
+    width: 100%;
+  }
+}
+
+.involvementSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.meetingTimes {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

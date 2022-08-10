@@ -3,8 +3,8 @@ $text-alt: #ffffff;
 
 $text-size-hero: 7em;
 $text-size-hero-lg: 6rem;
-$text-size-hero-md: 3.5rem;
-$text-size-hero-sm: 3rem;
+$text-size-hero-md: 5rem;
+$text-size-hero-sm: 3.5rem;
 $text-size-hero-xs: 2.5rem;
 
 $text-size-h1: 3rem;
@@ -14,7 +14,11 @@ $text-size-h2: 2rem;
 $text-size-h2-sm: 1.5rem;
 
 $text-size-body: 1rem;
-$text-size-body-sm: 0.8rem;
+$text-size-body-sm: 1rem;
+
+$text-size-button: 1.4rem;
+$text-size-button-sm: 1rem;
+$text-size-button-xs: 0.8rem;
 
 $text-size-subtitle: 0.8rem;
 $text-size-subtitle-sm: 0.6rem;
@@ -24,11 +28,15 @@ $container-padding: 1em 1.5em 1em 1.5em;
 $box-shadow: 1px 1px 10px 3px #0003;
 $text-shadow: 1px 1px 10px #0005;
 
+$button-hover: #d9d9d9;
 $background-color: #ffffff;
 $background-color-unfocused: #0003;
 
 $carousel-circle-focused: #6f6f6f;
 $carousel-circle-unfocused: #d9d9d9;
+
+$accent-color-primary: #2f80ed;
+$accent-color-darker: #2a72cf;
 
 $gradient-color-1: #f60101;
 $gradient-color-2: #272a92;
