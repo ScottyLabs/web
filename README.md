@@ -20,3 +20,9 @@ e.g. `gramliu/footer`, `gramliu/gradient-component`
 ## Merging your PR
 
 After you finish working on your feature, create a new [PR](https://github.com/ScottyLabs/scottylabs.org/pulls) and request someone to review it.
+
+## Environment
+
+| Property            | Description                                 |
+| ------------------- | ------------------------------------------- |
+| GOOGLE_ANALYTICS_ID | Google Analytics ID for tracking engagement |

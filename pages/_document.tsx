@@ -16,7 +16,7 @@ export default function Document() {
           {`window.Gradient = Gradient;`}
         </Script>
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -25,7 +25,7 @@ export default function Document() {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', '${process.env.GOOGLE_ANALYTICS}');
+          gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}');
         `}
         </Script>
       </body>
