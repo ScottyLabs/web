@@ -8,7 +8,7 @@
 .projectRow {
   margin-top: -2px;
   border-left: solid black 3px;
-  padding: 3em;
+  padding: 3em 0 3em 3em;
   position: relative;
 
   @include down($breakpoint-sm) {

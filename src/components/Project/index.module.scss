@@ -6,7 +6,7 @@
   flex-direction: row;
   gap: 3em;
 
-  @include down($breakpoint-lg) {
+  @include down($breakpoint-md) {
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 1em;
@@ -14,13 +14,24 @@
 }
 
 .projectDetails {
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.projectTitle {
+  @include down($breakpoint-md) {
+    text-align: center;
+  }
 }
 
 .softwareIconContainer {
   display: flex;
   flex-direction: row;
+
+  @include down($breakpoint-md) {
+    justify-content: center;
+  }
 }
 
 .softwareIcon {
@@ -50,10 +61,7 @@
   box-shadow: $box-shadow;
 
   @include down($breakpoint-lg) {
-    height: 15em;
-  }
-
-  @include down($breakpoint-sm) {
-    height: 10em;
+    width: 100%;
+    height: auto;
   }
 }

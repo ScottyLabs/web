@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import type { IconName } from "../../icons/Icon";
 import Icon from "../../icons/Icon";
 import wrapProps from "../../utils/wrapProps";
@@ -15,7 +14,7 @@ interface Props {
 }
 
 export default function Project({
-  className,
+  className = "",
   title,
   description,
   image,
@@ -24,7 +23,9 @@ export default function Project({
   return (
     <div className={`${styles.projectContainer} ${className}`}>
       <div className={styles.projectDetails}>
-        <Typography variant="subheader">{title}</Typography>
+        <Typography variant="subheader" className={styles.projectTitle}>
+          {title}
+        </Typography>
         <div className={styles.softwareIconContainer}>
           <Show when={softwareIcons != null}>
             {softwareIcons?.map((iconName, index) => (

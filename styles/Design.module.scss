@@ -12,7 +12,7 @@
   width: 80%;
   margin: 3em auto 0 auto;
 
-  @include down($breakpoint-sm) {
+  @include down($breakpoint-lg) {
     width: 90%;
   }
 }
