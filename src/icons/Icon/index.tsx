@@ -1,4 +1,4 @@
-import wrapProps from "../../utils/wrapProps";
+import wrapElement from "../../utils/wrapElement";
 import AfterEffectsIcon from "../AfterEffectsIcon";
 import FacebookIcon from "../FacebookIcon";
 import FigmaIcon from "../FigmaIcon";
@@ -35,5 +35,5 @@ interface Props {
 }
 
 export default function Icon({ className, name }: Props) {
-  return wrapProps(IconMapping[name])({ className });
+  return wrapElement(IconMapping[name])({ className });
 }

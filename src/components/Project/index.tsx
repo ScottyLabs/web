@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import type { IconName } from "../../icons/Icon";
 import Icon from "../../icons/Icon";
-import wrapProps from "../../utils/wrapProps";
+import wrapElement from "../../utils/wrapElement";
 import Show from "../Show";
 import Typography from "../Typography";
 import styles from "./index.module.scss";
@@ -44,7 +44,9 @@ export default function Project({
       </div>
       <div className={styles.projectImageContainer}>
         {image != null
-          ? wrapProps(image as JSX.Element)({ className: styles.projectImage })
+          ? wrapElement(image as JSX.Element)({
+              className: styles.projectImage,
+            })
           : null}
       </div>
     </div>
