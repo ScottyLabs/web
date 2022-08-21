@@ -1,4 +1,4 @@
-import wrapProps from "../../utils/wrapProps";
+import IconWrapper from "../../utils/wrapProps";
 import AfterEffectsIcon from "../AfterEffectsIcon";
 import FacebookIcon from "../FacebookIcon";
 import FigmaIcon from "../FigmaIcon";
@@ -13,27 +13,41 @@ import ScottyLabsIcon from "../ScottyLabsIcon";
 import TypeScriptIcon from "../TypeScriptIcon";
 
 const IconMapping = {
-  "after-effects": <AfterEffectsIcon />,
-  facebook: <FacebookIcon />,
-  figma: <FigmaIcon />,
-  illustrator: <IllustratorIcon />,
-  instagram: <InstagramIcon />,
-  mail: <MailIcon />,
-  mattermost: <MattermostIcon />,
-  medium: <MediumIcon />,
-  procreate: <ProcreateIcon />,
-  react: <ReactIcon />,
-  scottylabs: <ScottyLabsIcon />,
-  typescript: <TypeScriptIcon />,
+  "after-effects": AfterEffectsIcon,
+  facebook: FacebookIcon,
+  figma: FigmaIcon,
+  illustrator: IllustratorIcon,
+  instagram: InstagramIcon,
+  mail: MailIcon,
+  mattermost: MattermostIcon,
+  medium: MediumIcon,
+  procreate: ProcreateIcon,
+  react: ReactIcon,
+  scottylabs: ScottyLabsIcon,
+  typescript: TypeScriptIcon,
 };
 
 export type IconName = keyof typeof IconMapping;
-
-interface Props {
+interface IconProps {
   className?: string;
   name: IconName;
 }
 
-export default function Icon({ className, name }: Props) {
-  return wrapProps(IconMapping[name])({ className });
+interface IconWrapperProps {
+  element: (props: any) => JSX.Element;
+  className?: string;
+}
+
+/**
+ * Wrap an element to inject props
+ */
+function IconWrapper({
+  element: Element,
+  className,
+}: IconWrapperProps): JSX.Element {
+  return <Element className={className} />;
+}
+
+export default function Icon({ name, className }: IconProps) {
+  return <IconWrapper element={IconMapping[name]} className={className} />;
 }
