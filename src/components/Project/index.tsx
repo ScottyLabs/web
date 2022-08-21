@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import type { IconName } from "../../icons/Icon";
 import Icon from "../../icons/Icon";
+import wrapProps from "../../utils/wrapProps";
 import Show from "../Show";
 import Typography from "../Typography";
 import styles from "./index.module.scss";
