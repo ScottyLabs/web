@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Link from "next/link";
 import Typography from "../Typography";
 import styles from "./index.module.scss";
@@ -18,7 +19,7 @@ export default function RoundButton({
   return (
     <Link href={href ?? "#"} passHref>
       <a target="_blank" className={styles.link}>
-        <div className={`${styles.roundButton} ${className}`} onClick={onClick}>
+        <div className={clsx(styles.roundButton, className)} onClick={onClick}>
           <Typography variant="button" className={styles.buttonLabel}>
             {label}
           </Typography>

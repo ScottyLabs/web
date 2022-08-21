@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useEffect } from "react";
 import styles from "./index.module.scss";
 
@@ -24,7 +25,7 @@ function AnimatedGradient({ className }: SubGradientProps) {
 
   return (
     <canvas
-      className={`${styles.canvas} ${className}`}
+      className={clsx(styles.canvas, className)}
       id="gradient-canvas"
       data-transition-in
     />
@@ -37,7 +38,7 @@ function AnimatedGradient({ className }: SubGradientProps) {
  */
 function ExpandedGradient({ className = "" }: SubGradientProps) {
   return (
-    <div className={`${styles.gradientContainer} ${className}`}>
+    <div className={clsx(styles.gradientContainer, className)}>
       <AnimatedGradient className={styles.gradient} />
       <svg width={0} height={0}>
         <defs>
@@ -62,7 +63,7 @@ function ExpandedGradient({ className = "" }: SubGradientProps) {
  * Used on non-home pages
  */
 function CollapsedGradient({ className = "" }: SubGradientProps) {
-  return <div className={`${styles.staticGradient} ${className}`} />;
+  return <div className={clsx(styles.staticGradient, className)} />;
 }
 
 /**

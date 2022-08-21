@@ -1,5 +1,6 @@
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import clsx from "clsx";
 import Image from "next/future/image";
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
@@ -64,11 +65,11 @@ function CarouselImage({ src, width, height, label }: CarouselImageProps) {
 /**
  * Swipeable carousel of events on the home page
  */
-export default function EventCarousel({ className = "" }: Props) {
+export default function EventCarousel({ className }: Props) {
   const [index, setIndex] = useState(1);
 
   return (
-    <div className={`${styles.carouselContainer} ${className}`}>
+    <div className={clsx(styles.carouselContainer, className)}>
       <Carousel
         selectedItem={index}
         centerMode={true}
@@ -96,7 +97,7 @@ export default function EventCarousel({ className = "" }: Props) {
             <FontAwesomeIcon
               key={circleIndex}
               icon={faCircle}
-              className={`${styles.navCircle} ${focusClass}`}
+              className={clsx(styles.navCircle, focusClass)}
               onClick={() => {
                 setIndex(circleIndex);
               }}

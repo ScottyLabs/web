@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import type { IconName } from "../../icons/Icon";
 import Icon from "../../icons/Icon";
 import wrapProps from "../../utils/wrapProps";
@@ -21,7 +22,7 @@ export default function Project({
   softwareIcons,
 }: Props) {
   return (
-    <div className={`${styles.projectContainer} ${className}`}>
+    <div className={clsx(styles.projectContainer, className)}>
       <div className={styles.projectDetails}>
         <Typography variant="subheader" className={styles.projectTitle}>
           {title}
