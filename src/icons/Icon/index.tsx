@@ -1,4 +1,3 @@
-import IconWrapper from "../../utils/wrapProps";
 import AfterEffectsIcon from "../AfterEffectsIcon";
 import FacebookIcon from "../FacebookIcon";
 import FigmaIcon from "../FigmaIcon";
