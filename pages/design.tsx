@@ -29,32 +29,62 @@ export default function Design() {
         </div>
         <ProjectTimeline className={styles.projectTimeline}>
           <Project
-            title="Branding"
-            softwareIcons={["typescript", "react"]}
+            title="TartanHacks"
+            softwareIcons={["figma", "illustrator", "after-effects"]}
             description={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+              "Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks. The event's logo, merchandise, advertisements and motion graphics are designed for a different theme and visual language"
             }
             image={
               <Image
-                src="/tech/course-tool.jpg"
-                width={1404}
-                height={1053}
-                alt="Course tool"
+                src="/design/tartanhacks.png"
+                width={1920}
+                height={1080}
+                alt="TartanHacks"
               />
             }
           />
           <Project
-            title="UI/UX"
-            softwareIcons={["typescript", "react"]}
+            title="Web Development Weekend Branding"
+            softwareIcons={["illustrator", "figma", "procreate"]}
             description={
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+              "Promotional Graphics and Branding for WDW, a series of workshops, lectures and exercises practicing web development"
             }
             image={
               <Image
-                src="/tech/course-tool.jpg"
-                width={1404}
-                height={1053}
-                alt="Course tool"
+                src="/design/wdw.png"
+                width={820}
+                height={312}
+                alt="Web Development Weekend"
+              />
+            }
+          />
+          <Project
+            title="TartanHacks Registration UI/UX"
+            softwareIcons={["figma", "illustrator"]}
+            description={
+              "UI/UX for the TartanHacks Registration and Dashboard apps"
+            }
+            image={
+              <Image
+                src="/design/tartanhacks-registration.jpg"
+                width={800}
+                height={449}
+                alt="TartanHacks Registration"
+              />
+            }
+          />
+          <Project
+            title="Crash Course Branding"
+            softwareIcons={["illustrator", "figma", "procreate"]}
+            description={
+              "Promotional Graphics for Crash Course, a collection of software workshops hosted by ScottyLabs"
+            }
+            image={
+              <Image
+                src="/design/crash-course.png"
+                width={1920}
+                height={1005}
+                alt="Crash Course"
               />
             }
           />

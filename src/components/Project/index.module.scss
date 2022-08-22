@@ -28,6 +28,7 @@
 .softwareIconContainer {
   display: flex;
   flex-direction: row;
+  gap: 5px;
 
   @include down($breakpoint-md) {
     justify-content: center;
@@ -59,6 +60,8 @@
   height: 20em;
   width: auto;
   box-shadow: $box-shadow;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 
   @include down($breakpoint-lg) {
     width: 100%;
