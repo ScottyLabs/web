@@ -1,6 +1,6 @@
 import Image from "next/future/image";
 import Project from "../src/components/Project";
-import ProjectTimeline from "../src/components/ProjectTimeline";
+import Timeline from "../src/components/Timeline";
 import Typography from "../src/components/Typography";
 import AfterEffectsIcon from "../src/icons/AfterEffectsIcon";
 import FigmaIcon from "../src/icons/FigmaIcon";
@@ -16,7 +16,7 @@ export default function Design() {
         <Typography variant="header">Design</Typography>
         <div className={styles.aboutSection}>
           <Typography variant="body">
-            Design is a ScottyLabs team branch that works on the event branding,
+            Design is a ScottyLabs committee that works on the event branding,
             merchandising, and UI designs for all ScottyLabs projects and
             events.
           </Typography>
@@ -27,7 +27,7 @@ export default function Design() {
             <AfterEffectsIcon className={styles.softwareIcon} />
           </div>
         </div>
-        <ProjectTimeline className={styles.projectTimeline}>
+        <Timeline className={styles.projectTimeline}>
           <Project
             title="TartanHacks"
             softwareIcons={["figma", "illustrator", "after-effects"]}
@@ -89,7 +89,7 @@ export default function Design() {
             }
           />
           <Project title="Join the team!" />
-        </ProjectTimeline>
+        </Timeline>
       </div>
     </BaseLayout>
   );

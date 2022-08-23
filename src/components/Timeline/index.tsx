@@ -9,7 +9,7 @@ interface Props {
   children?: ReactNode;
 }
 
-export default function ProjectTimeline({ className, children }: Props) {
+export default function Timeline({ className, children }: Props) {
   const projects = Array.isArray(children) ? children : [children];
 
   return (
