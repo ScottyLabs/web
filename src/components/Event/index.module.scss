@@ -29,6 +29,9 @@
   font-size: 1rem;
   font-weight: 400;
   color: $text-unfocused;
+  @include down($breakpoint-md) {
+    text-align: center;
+  }
 }
 
 .description {
