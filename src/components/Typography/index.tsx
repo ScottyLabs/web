@@ -12,7 +12,7 @@ export type TypographyVariant =
 const Typography = ({
   variant = "body",
   children,
-  className = "",
+  className,
 }: {
   variant?: TypographyVariant;
   children?: string;

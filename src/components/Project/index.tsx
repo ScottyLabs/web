@@ -15,7 +15,7 @@ interface Props {
 }
 
 export default function Project({
-  className = "",
+  className,
   title,
   description,
   image,

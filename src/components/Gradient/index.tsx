@@ -36,7 +36,7 @@ function AnimatedGradient({ className }: SubGradientProps) {
  * Expanded gradient with a wave-masked bottom border.
  * Used in the home page with the hero icon
  */
-function ExpandedGradient({ className = "" }: SubGradientProps) {
+function ExpandedGradient({ className }: SubGradientProps) {
   return (
     <div className={clsx(styles.gradientContainer, className)}>
       <AnimatedGradient className={styles.gradient} />
@@ -62,7 +62,7 @@ function ExpandedGradient({ className = "" }: SubGradientProps) {
  * Collapsed static gradient
  * Used on non-home pages
  */
-function CollapsedGradient({ className = "" }: SubGradientProps) {
+function CollapsedGradient({ className }: SubGradientProps) {
   return <div className={clsx(styles.staticGradient, className)} />;
 }
 
@@ -70,7 +70,7 @@ function CollapsedGradient({ className = "" }: SubGradientProps) {
  * Gradient background for the navbar
  */
 export default function Gradient({
-  className = "",
+  className,
   expanded = false,
 }: GradientProps) {
   return expanded ? (
