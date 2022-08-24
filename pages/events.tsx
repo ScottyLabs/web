@@ -12,8 +12,8 @@ export default function Events() {
         <Typography variant="header">Events</Typography>
         <div className={styles.aboutSection}>
           <Typography variant="body">
-            Events is a ScottyLabs committee that works on exploring, ideating,
-            and organizing various events throughout the year.
+            On the Events side, we put together awesome events for the CMU
+            community, which involves working with logistics, food, and content!
           </Typography>
         </div>
         <Timeline className={styles.projectTimeline}>
@@ -33,22 +33,9 @@ export default function Events() {
             }
           />
           <Event
-            title="Crash Course"
-            description={"A software workshop series by ScottyLabs"}
-            date="??? 2022"
-            image={
-              <Image
-                src="/design/crash-course.png"
-                width={1920}
-                height={1005}
-                alt="Crash Course"
-              />
-            }
-          />
-          <Event
             title="TartanHacks"
             description={
-              "Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks."
+              "Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks. Over the span of an action-packed weekend, hackers come together and create fantastic projects"
             }
             date="February 2023"
             image={
