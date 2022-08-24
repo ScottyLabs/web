@@ -14,6 +14,7 @@ export default function AfterEffectsIcon({
         xmlns="http://www.w3.org/2000/svg"
         className={styles.centeredIcon}
       >
+        <title>Adobe After Effects</title>
         <g id="vlpa">
           <g id="vlpb">
             <g id="vlpc">

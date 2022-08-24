@@ -13,6 +13,7 @@ export default function IllustratorIcon({
         viewBox="0 0 511.45 498.66"
         className={styles.centeredIcon}
       >
+        <title>Adobe Illustrator</title>
         <defs>
           <style>{".b{fill:#ff9a00}"}</style>
         </defs>

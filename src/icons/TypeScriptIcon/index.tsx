@@ -13,6 +13,7 @@ export default function TypeScriptIcon({
         viewBox="0 0 48 48"
         className={styles.centeredIcon}
       >
+        <title>TypeScript</title>
         <path fill="#1976d2" d="M6 6h36v36H6z" />
         <path
           fill="#fff"

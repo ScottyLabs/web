@@ -17,6 +17,7 @@ export default function MattermostIcon({
         viewBox="0 0 219.03999 219.03999"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Mattermost</title>
         <defs id="defs52" />
         <g id="g56" transform="matrix(1.3333333,0,0,-1.3333333,0,219.04)">
           <g id="g58" transform="scale(0.1)">

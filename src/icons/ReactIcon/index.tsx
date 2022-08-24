@@ -13,6 +13,7 @@ export default function ReactIcon({
         viewBox="0 0 80 80"
         className={styles.centeredIcon}
       >
+        <title>React</title>
         <path
           fill="#61DAFB"
           d="M46.5 40c0 3.593-2.907 6.5-6.5 6.5s-6.5-2.907-6.5-6.5 2.907-6.5 6.5-6.5 6.5 2.907 6.5 6.5z"

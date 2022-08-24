@@ -17,6 +17,7 @@ export default function FacebookIcon({
         viewBox="0 0 300.00001 300.00001"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Facebook</title>
         <defs id="defs52" />
         <g id="g56" transform="matrix(0.29296875,0,0,-0.29296875,0,300)">
           <g id="g58" transform="scale(0.1)">

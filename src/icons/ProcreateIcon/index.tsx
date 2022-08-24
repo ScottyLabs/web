@@ -13,6 +13,7 @@ export default function ProcreateIcon({
         viewBox="5 5 37 37"
         className={styles.centeredIcon}
       >
+        <title>Procreate</title>
         <linearGradient
           id="hwXs5fyLq3QRoGd3KY8gYa"
           x1="7.172"
