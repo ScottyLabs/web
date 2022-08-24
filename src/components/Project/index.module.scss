@@ -25,6 +25,27 @@
   }
 }
 
+.projectLink {
+  color: $text-primary;
+  text-decoration: none;
+  transition: transform 0.25s;
+  display: flex;
+  align-items: center;
+
+  @include down($breakpoint-md) {
+    justify-content: center;
+  }
+
+  &:hover {
+    transform: translate(0, -3px);
+  }
+}
+
+.projectLinkIcon {
+  margin-left: 1em;
+  opacity: 0.8;
+}
+
 .softwareIconContainer {
   display: flex;
   flex-direction: row;
@@ -54,6 +75,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  @include between($breakpoint-md, $breakpoint-lg) {
+    max-width: 50%;
+  }
 }
 
 .projectImage {
@@ -62,6 +86,7 @@
   box-shadow: $box-shadow;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: 0 0;
 
   @include down($breakpoint-lg) {
     width: 100%;

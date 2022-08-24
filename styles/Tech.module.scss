@@ -1,0 +1,61 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.pageContent {
+  width: 80%;
+  margin: 3em auto 0 auto;
+
+  @include down($breakpoint-lg) {
+    width: 90%;
+  }
+}
+
+.aboutSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin-top: 1em;
+
+  @include down($breakpoint-sm) {
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.softwareIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 2em;
+
+  @include down($breakpoint-sm) {
+    gap: 1em;
+    justify-content: space-between;
+  }
+}
+
+.softwareIcon {
+  height: 64px;
+  width: 64px;
+
+  @include down($breakpoint-sm) {
+    height: 48px;
+    width: 48px;
+  }
+
+  @include down($breakpoint-xs) {
+    height: 36px;
+    width: 36px;
+  }
+}
+
+.projectTimeline {
+  margin-top: 5em;
+}
