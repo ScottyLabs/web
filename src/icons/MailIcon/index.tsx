@@ -1,16 +1,11 @@
 import BaseIcon from "../BaseIcon";
+import { SvgIconProps } from "../SvgIcon";
 import styles from "./index.module.scss";
 
-interface Props {
-  className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-}
-
-export default function MailIcon({ className, debugBbox }: Props): JSX.Element {
+export default function MailIcon({
+  className,
+  debugBbox,
+}: SvgIconProps): JSX.Element {
   return (
     <BaseIcon className={className} verticalScale={0.95} debugBbox={debugBbox}>
       <svg
