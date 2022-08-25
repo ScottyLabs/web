@@ -1,6 +1,6 @@
 import Image from "next/future/image";
 import Project from "../src/components/Project";
-import ProjectTimeline from "../src/components/ProjectTimeline";
+import Timeline from "../src/components/Timeline";
 import Typography from "../src/components/Typography";
 import BaseLayout from "../src/layouts/BaseLayout";
 import styles from "../styles/Tech.module.scss";
@@ -12,11 +12,11 @@ export default function Tech() {
         <Typography variant="header">Tech</Typography>
         <div className={styles.aboutSection}>
           <Typography variant="body">
-            The Tech committee creates various software projects for the campus
-            community.
+            The Tech committee builds various fun software projects across the
+            stack for the campus community!
           </Typography>
         </div>
-        <ProjectTimeline className={styles.projectTimeline}>
+        <Timeline className={styles.projectTimeline}>
           <Project
             title="CMU Courses"
             softwareIcons={[
@@ -138,7 +138,7 @@ export default function Tech() {
             }
           />
           <Project title="Join the team!" />
-        </ProjectTimeline>
+        </Timeline>
       </div>
     </BaseLayout>
   );

@@ -23,7 +23,7 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
           </Link>
         ) : null}
       </div>
-      {/* <div className={styles.navMobile}>
+      <div className={styles.navMobile}>
         <div className={styles.navSandwich}>
           <FontAwesomeIcon
             icon="bars"
@@ -36,9 +36,9 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
             onClick={() => setMobileLinksVisible(false)}
           >
             <div className={styles.navLinkModal}>
-              <Link href="/about" passHref>
+              {/* <Link href="/about" passHref>
                 <a className={`link ${styles.navLink}`}>/about</a>
-              </Link>
+              </Link> */}
               <Link href="/tech" passHref>
                 <a className={`link ${styles.navLink}`}>/tech</a>
               </Link>
@@ -53,9 +53,9 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
         ) : null}
       </div>
       <div className={styles.navLinkContainer}>
-        <Link href="/about" passHref>
+        {/* <Link href="/about" passHref>
           <a className={`link ${styles.navLink}`}>/about</a>
-        </Link>
+        </Link> */}
         <Link href="/tech" passHref>
           <a className={`link ${styles.navLink}`}>/tech</a>
         </Link>
@@ -65,7 +65,7 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
         <Link href="/events" passHref>
           <a className={`link ${styles.navLink}`}>/events</a>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };
