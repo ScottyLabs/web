@@ -1,19 +1,11 @@
 import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
-
-interface Props {
-  className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-}
+import { SvgIconProps } from "../SvgIcon";
 
 export default function TypeScriptIcon({
   className,
   debugBbox,
-}: Props): JSX.Element {
+}: SvgIconProps): JSX.Element {
   return (
     <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
@@ -21,6 +13,7 @@ export default function TypeScriptIcon({
         viewBox="0 0 48 48"
         className={styles.centeredIcon}
       >
+        <title>TypeScript</title>
         <path fill="#1976d2" d="M6 6h36v36H6z" />
         <path
           fill="#fff"

@@ -1,19 +1,11 @@
 import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
-
-interface Props {
-  className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-}
+import { SvgIconProps } from "../SvgIcon";
 
 export default function IllustratorIcon({
   className,
   debugBbox,
-}: Props): JSX.Element {
+}: SvgIconProps): JSX.Element {
   return (
     <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
@@ -21,6 +13,7 @@ export default function IllustratorIcon({
         viewBox="0 0 511.45 498.66"
         className={styles.centeredIcon}
       >
+        <title>Adobe Illustrator</title>
         <defs>
           <style>{".b{fill:#ff9a00}"}</style>
         </defs>

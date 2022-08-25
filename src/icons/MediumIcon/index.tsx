@@ -1,19 +1,11 @@
 import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
-
-interface Props {
-  className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-}
+import { SvgIconProps } from "../SvgIcon";
 
 export default function MediumIcon({
   className,
   debugBbox,
-}: Props): JSX.Element {
+}: SvgIconProps): JSX.Element {
   return (
     <BaseIcon className={className} verticalScale={0.95} debugBbox={debugBbox}>
       <svg
@@ -21,6 +13,7 @@ export default function MediumIcon({
         viewBox="0 0 1043.63 592.71"
         className={styles.centeredIcon}
       >
+        <title>Medium</title>
         <g id="Layer_2" data-name="Layer 2">
           <g id="Layer_1-2" data-name="Layer 1">
             <path d="M588.67,296.36c0,163.67-131.78,296.35-294.33,296.35S0,460,0,296.36,131.78,0,294.34,0,588.67,132.69,588.67,296.36" />

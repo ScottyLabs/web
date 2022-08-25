@@ -1,19 +1,11 @@
 import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
-
-interface Props {
-  className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-}
+import { SvgIconProps } from "../SvgIcon";
 
 export default function ProcreateIcon({
   className,
   debugBbox,
-}: Props): JSX.Element {
+}: SvgIconProps): JSX.Element {
   return (
     <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
@@ -21,6 +13,7 @@ export default function ProcreateIcon({
         viewBox="5 5 37 37"
         className={styles.centeredIcon}
       >
+        <title>Procreate</title>
         <linearGradient
           id="hwXs5fyLq3QRoGd3KY8gYa"
           x1="7.172"

@@ -1,19 +1,11 @@
 import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
-
-interface Props {
-  className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-}
+import { SvgIconProps } from "../SvgIcon";
 
 export default function FacebookIcon({
   className,
   debugBbox,
-}: Props): JSX.Element {
+}: SvgIconProps): JSX.Element {
   return (
     <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
@@ -25,6 +17,7 @@ export default function FacebookIcon({
         viewBox="0 0 300.00001 300.00001"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Facebook</title>
         <defs id="defs52" />
         <g id="g56" transform="matrix(0.29296875,0,0,-0.29296875,0,300)">
           <g id="g58" transform="scale(0.1)">

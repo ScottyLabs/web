@@ -1,19 +1,11 @@
 import BaseIcon from "../BaseIcon";
 import styles from "../styles/index.module.scss";
-
-interface Props {
-  className?: string;
-  /**
-   * Show the bounding box of the wrapper in black, and the bounding box of the
-   * inner svg in yellow.
-   */
-  debugBbox?: boolean;
-}
+import { SvgIconProps } from "../SvgIcon";
 
 export default function MattermostIcon({
   className,
   debugBbox,
-}: Props): JSX.Element {
+}: SvgIconProps): JSX.Element {
   return (
     <BaseIcon className={className} debugBbox={debugBbox}>
       <svg
@@ -25,6 +17,7 @@ export default function MattermostIcon({
         viewBox="0 0 219.03999 219.03999"
         xmlns="http://www.w3.org/2000/svg"
       >
+        <title>Mattermost</title>
         <defs id="defs52" />
         <g id="g56" transform="matrix(1.3333333,0,0,-1.3333333,0,219.04)">
           <g id="g58" transform="scale(0.1)">
