@@ -20,7 +20,7 @@ export default function Events() {
           <Event
             title="Web Development Weekend"
             description={
-              "A series of workshops that teach beginners important web development skills"
+              "Web Dev Weekend is a weekend long event where participants learn about web development through student-led talks and even get to create their own website"
             }
             date="October 2022"
             image={
