@@ -43,6 +43,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  @include between($breakpoint-md, $breakpoint-lg) {
+    max-width: 50%;
+  }
 }
 
 .eventImage {
