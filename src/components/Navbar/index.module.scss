@@ -46,6 +46,7 @@
 
 .navLink {
   color: $text-alt;
+  text-shadow: $text-shadow;
 
   @include down($breakpoint-sm) {
     color: $text-primary;
