@@ -12,9 +12,14 @@ interface Props {
 export default function Member({ image, name, role }: Props) {
   return (
     <div className={styles.container}>
-      <div className={styles.avatar}>
-        {image != null ? image : <FontAwesomeIcon icon={faUserCircle} />}
-      </div>
+      {image != null ? (
+        <div className={styles.avatar}>{image}</div>
+      ) : (
+        <FontAwesomeIcon
+          icon={faUserCircle}
+          className={styles.placeholderAvatar}
+        />
+      )}
       <div className={styles.title}>
         <Typography variant="body">{name}</Typography>
         <Typography variant="subtitle">{role}</Typography>
