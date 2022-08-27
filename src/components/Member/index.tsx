@@ -1,18 +1,20 @@
 import styles from "./index.module.scss";
 import Typography from "../Typography";
+import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface Props{
-  image: JSX.Element;
+  image?: JSX.Element;
   name: string;
   role: string;
 }
 
 export default function Member({ image, name, role }: Props) {
-  <div className={styles.container}>
+  return <div className={styles.container}>
     <div className={styles.avatar}>
-      {image}
+      {image!=null?image:(<FontAwesomeIcon icon={faUserCircle}/>)}
     </div>
-    <Typography variant="subtitle">{name}</Typography>
-    <Typography variant="subtitle">{role}</Typography>
+    <div className={styles.title}><Typography variant="body">{name}</Typography>
+    <Typography variant="subtitle">{role}</Typography></div>
   </div>
 }

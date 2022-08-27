@@ -1,14 +1,14 @@
 .container{
   display: flex;
   flex-direction: column;
-  gap:2em;
+  gap:em;
   align-items: center;
 }
 
 .avatar {
   vertical-align: middle;
-  width: 5em;
-  height: 5em;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 

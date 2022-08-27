@@ -2,6 +2,8 @@ import BaseLayout from "../src/layouts/BaseLayout";
 import Typography from "../src/components/Typography";
 import styles from "../styles/About.module.scss";
 import Image from "next/image";
+import Members from "../src/components/Members";
+import Member from "../src/components/Member";
 
 export default function About() {
   return (
@@ -28,7 +30,11 @@ export default function About() {
             </Typography>
           </div>
           
-        </div></div>
+        </div>
+        <Members>
+          <Member role="Director" name="John Doe"/>
+        </Members>
+      </div>
         
     </BaseLayout>
   )
