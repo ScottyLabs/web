@@ -8,7 +8,8 @@ import Member from "../src/components/Member";
 export default function About() {
   return (
     <BaseLayout collapsedNavBar={true}>
-      <div className={styles.pageContent}><Typography variant="header">About</Typography>
+      <div className={styles.pageContent}>
+        <Typography variant="header">About</Typography>
         <div className={styles.descriptionContainer}>
           <div className={styles.aboutPicContainer}>
             <Image
@@ -19,7 +20,6 @@ export default function About() {
             />
           </div>
           <div className={styles.about}>
-            
             <Typography variant="body">
               ScottyLabs is a student organization at Carnegie Mellon University
               devoted to helping students learn about and explore interesting
@@ -29,13 +29,11 @@ export default function About() {
               applications and services for the campus community.
             </Typography>
           </div>
-          
         </div>
         <Members>
-          <Member role="Director" name="John Doe"/>
+          <Member role="Director" name="John Doe" />
         </Members>
       </div>
-        
     </BaseLayout>
-  )
+  );
 }
