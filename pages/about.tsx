@@ -32,6 +32,11 @@ export default function About() {
         </div>
         <Members>
           <Member role="Director" name="John Doe" />
+          <Member role="Director" name="John Doe" />
+          <Member role="Director" name="John Doe" />
+          <Member role="Director" name="John Doe" />
+          <Member role="Director" name="John Doe" />
+          <Member role="Director" name="John Doe" />
         </Members>
       </div>
     </BaseLayout>
