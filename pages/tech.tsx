@@ -41,6 +41,22 @@ export default function Tech() {
             }
           />
           <Project
+            title="CMUEats"
+            softwareIcons={["javascript", "react"]}
+            description={
+              "CMUEats is your one-stop-shop for finding out what campus dining locations right now."
+            }
+            link="https://cmueats.com/"
+            image={
+              <Image
+                src="/tech/cmueats.jpg"
+                width={1920}
+                height={1080}
+                alt="CMU Eats"
+              />
+            }
+          />
+          <Project
             title="Lost and Found"
             softwareIcons={["typescript", "react", "mongodb"]}
             description={"Official lost-and-found website adopted by CMU"}
