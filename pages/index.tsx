@@ -46,9 +46,12 @@ export default function Home() {
             />
           </div>
           <div className={styles.meetingTimes}>
-            <Typography>Weekly meetings: Thursday, 7pm</Typography>
+            <Typography>
+              First GBM: Saturday (Sept 10), 1pm @ GHC 4307
+            </Typography>
+            {/* <Typography>Weekly meetings: Thursday, 7pm</Typography>
             <Typography>Tech: Saturday, 2pm</Typography>
-            <Typography>Design: Saturday, 2pm</Typography>
+            <Typography>Design: Saturday, 2pm</Typography> */}
           </div>
         </div>
       </main>
