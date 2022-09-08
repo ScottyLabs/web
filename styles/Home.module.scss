@@ -73,6 +73,14 @@
   justify-content: center;
 }
 
+.joinButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
 .meetingTimes {
   margin-top: 2em;
   display: flex;
