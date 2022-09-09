@@ -46,7 +46,7 @@ function ExpandedGradient({ className }: SubGradientProps) {
   return (
     <div className={clsx(styles.gradientContainer, className)}>
       <AnimatedGradientNoSSR
-        className={clsx(isSafari() ? styles.safariGradient : styles.gradient)}
+        className={clsx(isSafari() ? styles.gradientSafari : styles.gradient)}
       />
       <svg width={0} height={0}>
         <defs>
