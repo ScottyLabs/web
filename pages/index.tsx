@@ -40,14 +40,10 @@ export default function Home() {
               label="Get involved"
               href="https://tartanconnect.cmu.edu/scottylabs/club_signup"
             />
-            <RoundButton
-              label="Club fair check-in"
-              href="http://go.scottylabs.org/fair"
-            />
           </div>
           <div className={styles.meetingTimes}>
             <Typography>
-              First GBM: Saturday (Sept 10), 1pm @ GHC 4307
+              First GBM: Saturday (Sept 10), 1:30-3:30pm @ GHC 4307
             </Typography>
             {/* <Typography>Weekly meetings: Thursday, 7pm</Typography>
             <Typography>Tech: Saturday, 2pm</Typography>
