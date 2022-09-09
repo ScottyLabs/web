@@ -53,6 +53,10 @@
   clip-path: url("#gradientClipPath");
 }
 
+.gradientSafari {
+  height: 80%;
+}
+
 .gradientPath {
   @include down($breakpoint-md) {
     display: none;

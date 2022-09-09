@@ -1,5 +1,7 @@
 import clsx from "clsx";
+import dynamic from "next/dynamic";
 import { useEffect } from "react";
+import isSafari from "../../utils/isSafari";
 import styles from "./index.module.scss";
 
 interface GradientProps {
@@ -7,7 +9,7 @@ interface GradientProps {
   expanded?: boolean;
 }
 
-interface SubGradientProps {
+export interface SubGradientProps {
   className?: string;
 }
 
@@ -32,6 +34,10 @@ function AnimatedGradient({ className }: SubGradientProps) {
   );
 }
 
+const AnimatedGradientNoSSR = dynamic(() => import("./AnimatedGradient"), {
+  ssr: false,
+});
+
 /**
  * Expanded gradient with a wave-masked bottom border.
  * Used in the home page with the hero icon
@@ -39,7 +45,9 @@ function AnimatedGradient({ className }: SubGradientProps) {
 function ExpandedGradient({ className }: SubGradientProps) {
   return (
     <div className={clsx(styles.gradientContainer, className)}>
-      <AnimatedGradient className={styles.gradient} />
+      <AnimatedGradientNoSSR
+        className={clsx(isSafari() ? styles.safariGradient : styles.gradient)}
+      />
       <svg width={0} height={0}>
         <defs>
           <clipPath id="gradientClipPath" clipPathUnits="objectBoundingBox">
