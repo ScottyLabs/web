@@ -6,7 +6,7 @@ export default function isSafari() {
     return false;
   }
   if (navigator.userAgent.indexOf("Chrome") > -1) {
-    return true;
+    return false;
   }
   return navigator.userAgent.indexOf("Safari") > -1;
 }
