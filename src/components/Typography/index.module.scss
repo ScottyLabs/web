@@ -1,6 +1,10 @@
 @import "~/styles/variables.scss";
 @import "~/styles/mixins.scss";
 
+.centered {
+  text-align: center;
+}
+
 .hero {
   font-size: $text-size-hero;
   font-weight: 800;

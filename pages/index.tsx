@@ -42,15 +42,26 @@ export default function Home() {
             />
           </div>
           <div className={styles.meetingTimes}>
-            <Typography>
-              First GBM: Saturday (Sept 10), 1:30-3:30pm @ GHC 4307
-            </Typography>
-            {/* <Typography>Weekly meetings: Thursday, 7pm</Typography>
-            <Typography>Tech: Saturday, 2pm</Typography>
-            <Typography>Design: Saturday, 2pm</Typography> */}
+            <Typography variant="header">Our Meetings</Typography>
+            <br />
+            <Typography>Weekly GBM: Thursdays, 5pm, POS 153</Typography>
+            <Typography>Committee Meetings: Saturdays, 2-4pm</Typography>
+            <div className={styles.meetingRooms}>
+              <Typography>Tech</Typography>
+              <Typography>POS 153</Typography>
+              <Typography>Design</Typography>
+              <Typography>POS 152</Typography>
+              <Typography>Finance</Typography>
+              <Typography>POS 148</Typography>
+              <Typography>Events/Outreach</Typography>
+              <Typography>POS 151</Typography>
+            </div>
           </div>
         </div>
       </main>
+      <Typography variant="header" centered>
+        Our Events
+      </Typography>
       <EventCarousel />
     </BaseLayout>
   );

@@ -83,7 +83,24 @@
 
 .meetingTimes {
   margin-top: 2em;
+  margin-bottom: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.meetingRooms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2em;
+}
+
+.meetingRooms *:nth-child(even) {
+  align-self: end;
+  text-align: end;
+}
+
+.meetingRooms *:nth-child(odd) {
+  align-self: start;
+  text-align: start;
 }

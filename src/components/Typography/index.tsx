@@ -13,12 +13,24 @@ const Typography = ({
   variant = "body",
   children,
   className,
+  centered,
 }: {
   variant?: TypographyVariant;
   children?: string;
   className?: String;
+  centered?: boolean;
 }) => {
-  return <div className={clsx(className, styles[variant])}>{children}</div>;
+  return (
+    <div
+      className={clsx(
+        className,
+        styles[variant],
+        centered ? styles["centered"] : null
+      )}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Typography;
