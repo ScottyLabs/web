@@ -52,7 +52,7 @@ export default function Home() {
               <Typography>Design</Typography>
               <Typography>POS 152</Typography>
               <Typography>Finance</Typography>
-              <Typography>POS 148</Typography>
+              <Typography>POS 147</Typography>
               <Typography>Events/Outreach</Typography>
               <Typography>POS 151</Typography>
             </div>
