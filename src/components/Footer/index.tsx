@@ -2,7 +2,8 @@ import Link from "next/link";
 import FacebookIcon from "../../icons/FacebookIcon";
 import InstagramIcon from "../../icons/InstagramIcon";
 import MailIcon from "../../icons/MailIcon";
-import MattermostIcon from "../../icons/MattermostIcon";
+import SlackIcon from "../../icons/SlackIcon";
+
 import MediumIcon from "../../icons/MediumIcon";
 import Typography from "../Typography";
 import styles from "./index.module.scss";
@@ -63,9 +64,9 @@ const Footer = () => {
         label="Medium"
       />
       <FooterLink
-        href="http://go.scottylabs.org/mattermost"
-        icon={<MattermostIcon className={styles.footerIcon} />}
-        label="Mattermost"
+        href="http://go.scottylabs.org/slack"
+        icon={<SlackIcon className={styles.footerIcon} />}
+        label="Slack"
       />
       <FooterLink
         href="mailto://hello@scottylabs.org"
