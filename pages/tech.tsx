@@ -2,12 +2,11 @@ import Image from "next/future/image";
 import Project from "../src/components/Project";
 import Timeline from "../src/components/Timeline";
 import Typography from "../src/components/Typography";
-import BaseLayout from "../src/layouts/BaseLayout";
 import styles from "../styles/Tech.module.scss";
 
 export default function Tech() {
   return (
-    <BaseLayout collapsedNavBar={true}>
+    <>
       <div className={styles.pageContent}>
         <Typography variant="header">Tech</Typography>
         <div className={styles.aboutSection}>
@@ -156,6 +155,6 @@ export default function Tech() {
           <Project title="Join the team!" />
         </Timeline>
       </div>
-    </BaseLayout>
+    </>
   );
 }

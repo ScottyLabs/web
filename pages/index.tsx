@@ -3,12 +3,11 @@ import EventCarousel from "../src/components/EventCarousel";
 import Hero from "../src/components/Hero";
 import RoundButton from "../src/components/RoundButton";
 import Typography from "../src/components/Typography";
-import BaseLayout from "../src/layouts/BaseLayout";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
-    <BaseLayout collapsedNavBar={false}>
+    <>
       <Hero />
       <main className={styles.infoContainer}>
         <div className={styles.aboutContainer}>
@@ -63,6 +62,6 @@ export default function Home() {
         Our Events
       </Typography>
       <EventCarousel />
-    </BaseLayout>
+    </>
   );
 }

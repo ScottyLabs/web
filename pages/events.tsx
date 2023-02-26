@@ -2,12 +2,11 @@ import Image from "next/future/image";
 import Event from "../src/components/Event";
 import Timeline from "../src/components/Timeline";
 import Typography from "../src/components/Typography";
-import BaseLayout from "../src/layouts/BaseLayout";
 import styles from "../styles/Events.module.scss";
 
 export default function Events() {
   return (
-    <BaseLayout collapsedNavBar={true}>
+    <>
       <div className={styles.pageContent}>
         <Typography variant="header">Events</Typography>
         <div className={styles.aboutSection}>
@@ -50,6 +49,6 @@ export default function Events() {
           <Event title="Join the team!" />
         </Timeline>
       </div>
-    </BaseLayout>
+    </>
   );
 }
