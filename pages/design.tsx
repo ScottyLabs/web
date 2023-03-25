@@ -44,17 +44,17 @@ export default function Design() {
             }
           />
           <Project
-            title="Web Development Weekend Branding"
+            title="Portfolio Development Fair Branding"
             softwareIcons={["illustrator", "figma", "procreate"]}
             description={
-              "Promotional Graphics and Branding for WDW, a series of workshops, lectures and exercises practicing web development"
+              "Promotional Graphics and Branding for PDF, a series of workshops, lectures and exercises practicing web development"
             }
             image={
               <Image
-                src="/design/wdw.png"
+                src="/design/pdf.png"
                 width={820}
                 height={312}
-                alt="Web Development Weekend"
+                alt="Portfolio Development Fair"
               />
             }
           />

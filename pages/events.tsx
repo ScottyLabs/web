@@ -18,17 +18,17 @@ export default function Events() {
         </div>
         <Timeline className={styles.projectTimeline}>
           <Event
-            title="Web Development Weekend"
+            title="Portfolio Development Fair"
             description={
-              "Web Dev Weekend is a weekend long event where participants learn about web development through student-led talks and even get to create their own website"
+              "Portfolio Development Fair is a weekend long event where participants learn about web development through student-led talks and even get to create their own website"
             }
             date="October 2022"
             image={
               <Image
-                src="/design/wdw.png"
+                src="/design/pdf.png"
                 width={820}
                 height={312}
-                alt="Web Development Weekend"
+                alt="Portfolio Development Fair"
               />
             }
           />

@@ -99,6 +99,7 @@ export default function Tech() {
             description={
               "Promotional website for TartanHacks, Pittsburgh's largest hackathon"
             }
+            link="https://tartanhacks.com"
             image={
               <Image
                 src="/tech/tartanhacks-website.png"
