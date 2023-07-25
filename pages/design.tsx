@@ -6,11 +6,12 @@ import AfterEffectsIcon from '../src/icons/AfterEffectsIcon';
 import FigmaIcon from '../src/icons/FigmaIcon';
 import IllustratorIcon from '../src/icons/IllustratorIcon';
 import ProcreateIcon from '../src/icons/ProcreateIcon';
+import BaseLayout from '../src/layouts/BaseLayout';
 import styles from '../styles/Design.module.scss';
 
 export default function Design() {
 	return (
-		<>
+		<BaseLayout collapsedNavBar={true}>
 			<div className={styles.pageContent}>
 				<Typography variant="header">Design</Typography>
 				<div className={styles.aboutSection}>
@@ -94,6 +95,6 @@ export default function Design() {
 					<Project title="Join the team!" />
 				</Timeline>
 			</div>
-		</>
+		</BaseLayout>
 	);
 }

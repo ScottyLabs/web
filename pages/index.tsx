@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.scss';
 
 export default function Home() {
 	return (
-		<>
+		<BaseLayout collapsedNavBar={false}>
 			<Hero />
 			<main className={styles.infoContainer}>
 				<div className={styles.aboutContainer}>
@@ -72,6 +72,6 @@ export default function Home() {
 				Our Events
 			</Typography>
 			<EventCarousel />
-		</>
+		</BaseLayout>
 	);
 }
