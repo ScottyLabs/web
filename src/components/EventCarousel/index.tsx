@@ -1,7 +1,11 @@
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
+<<<<<<< Updated upstream
 import Image from 'next/image';
+=======
+import Image from 'next/future/image';
+>>>>>>> Stashed changes
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';

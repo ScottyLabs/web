@@ -1,11 +1,12 @@
-@import "./variables.scss";
-@import "./mixins.scss";
+@import './variables.scss';
+@import './mixins.scss';
 
 // Fonts
-@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&display=swap');
 
 html,
 body {
+<<<<<<< Updated upstream
   min-height: 100vh;
   padding: 0;
   margin: 0;
@@ -13,67 +14,76 @@ body {
   color: $text-primary;
   font-size: $text-size-body;
   overflow-x: hidden;
+=======
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	font-family: 'Albert Sans', sans-serif;
+	color: $text-primary;
+	font-size: $text-size-body;
+	overflow-x: hidden;
+>>>>>>> Stashed changes
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 img {
-  image-rendering: -moz-crisp-edges; /* Firefox */
-  image-rendering: -o-crisp-edges; /* Opera */
-  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-  image-rendering: crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+	image-rendering: -moz-crisp-edges; /* Firefox */
+	image-rendering: -o-crisp-edges; /* Opera */
+	image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 
 // Links with animated underline on hover
 .link {
-  color: $text-primary;
-  text-decoration: none;
+	color: $text-primary;
+	text-decoration: none;
 
-  display: inline;
-  position: relative;
-  overflow: hidden;
-  height: fit-content;
-  padding-bottom: 2px;
+	display: inline;
+	position: relative;
+	overflow: hidden;
+	height: fit-content;
+	padding-bottom: 2px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    width: 0;
-    bottom: -3px;
-    background: $text-alt;
-    height: 4px;
-    transition-property: width;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		right: 0;
+		width: 0;
+		bottom: -3px;
+		background: $text-alt;
+		height: 4px;
+		transition-property: width;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
 
-    @include down($breakpoint-md) {
-      height: 3px;
-    }
-  }
+		@include down($breakpoint-md) {
+			height: 3px;
+		}
+	}
 
-  &:is(:hover, :focus, :active)::after {
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
+	&:is(:hover, :focus, :active)::after {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
 }
 
 // react-responsive-carousel style overrides
 .carousel {
-  overflow-y: visible !important;
+	overflow-y: visible !important;
 }
 
 .carousel .slider-wrapper {
-  overflow-y: visible !important;
-  padding-bottom: 1em;
+	overflow-y: visible !important;
+	padding-bottom: 1em;
 }
 
 .carousel .slider-wrapper .slide img {
-  width: 80%;
-  margin: 0 auto 0 auto;
+	width: 80%;
+	margin: 0 auto 0 auto;
 }
