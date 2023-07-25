@@ -1,77 +1,77 @@
-@import "~/styles/variables.scss";
-@import "~/styles/mixins.scss";
+@import '~/styles/variables.scss';
+@import '~/styles/mixins.scss';
 
 .centered {
-  text-align: center;
+	text-align: center;
 }
 
 .hero {
-  font-size: $text-size-hero;
-  font-weight: 800;
+	font-size: $text-size-hero;
+	font-weight: 800;
 
-  @include down($breakpoint-lg) {
-    font-size: $text-size-hero-lg;
-  }
+	@include down($breakpoint-lg) {
+		font-size: $text-size-hero-lg;
+	}
 
-  @include down($breakpoint-md) {
-    font-size: $text-size-hero-md;
-  }
+	@include down($breakpoint-md) {
+		font-size: $text-size-hero-md;
+	}
 
-  @include down($breakpoint-sm) {
-    font-size: $text-size-hero-sm;
-  }
+	@include down($breakpoint-sm) {
+		font-size: $text-size-hero-sm;
+	}
 
-  @include down($breakpoint-xs) {
-    font-size: $text-size-hero-xs;
-  }
+	@include down($breakpoint-xs) {
+		font-size: $text-size-hero-xs;
+	}
 }
 
 .header {
-  font-size: $text-size-h1;
-  font-weight: 800;
-  text-transform: capitalize;
+	font-size: $text-size-h1;
+	font-weight: 800;
+	text-transform: capitalize;
 
-  @include down($breakpoint-sm) {
-    font-size: $text-size-h1-sm;
-  }
+	@include down($breakpoint-sm) {
+		font-size: $text-size-h1-sm;
+	}
 }
 
 .subheader {
-  font-size: $text-size-h2;
-  font-weight: 500;
+	font-size: $text-size-h2;
+	font-weight: 500;
 
-  @include down($breakpoint-sm) {
-    font-size: $text-size-h2-sm;
-  }
+	@include down($breakpoint-sm) {
+		font-size: $text-size-h2-sm;
+	}
 }
 
 .body {
-  font-size: $text-size-body;
-  line-height: 1.5;
+	font-size: $text-size-body;
+	line-height: 1.5;
 
-  @include down($breakpoint-sm) {
-    font-size: $text-size-body-sm;
-  }
+	@include down($breakpoint-sm) {
+		font-size: $text-size-body-sm;
+	}
 }
 
 .subtitle {
-  font-size: $text-size-subtitle;
+	font-size: $text-size-subtitle;
 
-  @include down($breakpoint-sm) {
-    font-size: $text-size-subtitle-sm;
-  }
-  @include down($breakpoint-xs) {
-    font-size: $text-size-subtitle-xs;
-  }
+	@include down($breakpoint-sm) {
+		font-size: $text-size-subtitle-sm;
+	}
+	@include down($breakpoint-xs) {
+		font-size: $text-size-subtitle-xs;
+	}
 }
 
 .button {
-  font-size: $text-size-button;
+	font-size: $text-size-button;
 
-  @include down($breakpoint-sm) {
-    font-size: $text-size-button-sm;
-  }
-  @include down($breakpoint-xs) {
-    font-size: $text-size-button-xs;
-  }
+	@include down($breakpoint-sm) {
+		font-size: $text-size-button-sm;
+	}
+	@include down($breakpoint-xs) {
+		font-size: $text-size-button-xs;
+	}
 }

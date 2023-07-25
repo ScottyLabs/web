@@ -1,62 +1,62 @@
-@import "~/styles/variables.scss";
-@import "~/styles/mixins.scss";
+@import '~/styles/variables.scss';
+@import '~/styles/mixins.scss';
 
 .eventContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
+	display: flex;
+	flex-direction: row;
+	gap: 3em;
 
-  @include down($breakpoint-md) {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 1em;
-  }
+	@include down($breakpoint-md) {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		gap: 1em;
+	}
 }
 
 .eventDetails {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .eventTitle {
-  @include down($breakpoint-md) {
-    text-align: center;
-  }
+	@include down($breakpoint-md) {
+		text-align: center;
+	}
 }
 
 .eventDate {
-  font-size: 1rem;
-  font-weight: 400;
-  color: $text-unfocused;
-  @include down($breakpoint-md) {
-    text-align: center;
-  }
+	font-size: 1rem;
+	font-weight: 400;
+	color: $text-unfocused;
+	@include down($breakpoint-md) {
+		text-align: center;
+	}
 }
 
 .description {
-  margin-top: 1em;
+	margin-top: 1em;
 }
 
 .eventImageContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  @include between($breakpoint-md, $breakpoint-lg) {
-    max-width: 50%;
-  }
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	@include between($breakpoint-md, $breakpoint-lg) {
+		max-width: 50%;
+	}
 }
 
 .eventImage {
-  height: 20em;
-  width: auto;
-  box-shadow: $box-shadow;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+	height: 20em;
+	width: auto;
+	box-shadow: $box-shadow;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
 
-  @include down($breakpoint-lg) {
-    width: 100%;
-    height: auto;
-  }
+	@include down($breakpoint-lg) {
+		width: 100%;
+		height: auto;
+	}
 }

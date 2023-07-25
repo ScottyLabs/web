@@ -1,108 +1,108 @@
-@import "~/styles/variables.scss";
-@import "~/styles/mixins.scss";
+@import '~/styles/variables.scss';
+@import '~/styles/mixins.scss';
 
 .navbarContainer {
-  top: 0;
-  left: 0;
-  width: 100%;
+	top: 0;
+	left: 0;
+	width: 100%;
 
-  padding: $container-padding;
+	padding: $container-padding;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
 }
 
 .navIcon {
-  width: 50px;
-  height: auto;
-  color: white;
-  transition: $logo-hover-transition;
+	width: 50px;
+	height: auto;
+	color: white;
+	transition: $logo-hover-transition;
 
-  @include down($breakpoint-md) {
-    width: 30px;
-  }
+	@include down($breakpoint-md) {
+		width: 30px;
+	}
 }
 
 .navIcon:hover {
-  transition: $logo-hover-transition;
-  opacity: 0.7;
+	transition: $logo-hover-transition;
+	opacity: 0.7;
 }
 
 .navLinkContainer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 5em;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 5em;
 
-  @include down($breakpoint-md) {
-    gap: 2em;
-  }
+	@include down($breakpoint-md) {
+		gap: 2em;
+	}
 
-  @include down($breakpoint-sm) {
-    display: none;
-  }
+	@include down($breakpoint-sm) {
+		display: none;
+	}
 }
 
 .navLink {
-  color: $text-alt;
-  text-shadow: $text-shadow;
+	color: $text-alt;
+	text-shadow: $text-shadow;
 
-  @include down($breakpoint-sm) {
-    color: $text-primary;
-  }
+	@include down($breakpoint-sm) {
+		color: $text-primary;
+	}
 }
 
 // Navbar elements for mobile screens
 .navMobile {
-  display: none;
+	display: none;
 
-  @include down($breakpoint-sm) {
-    display: block;
-  }
+	@include down($breakpoint-sm) {
+		display: block;
+	}
 }
 
 .navSandwich {
-  width: 1.3em;
-  margin-left: auto;
-  margin-right: 0;
-  color: $text-alt;
+	width: 1.3em;
+	margin-left: auto;
+	margin-right: 0;
+	color: $text-alt;
 }
 
 .modalBackground {
-  display: none;
+	display: none;
 
-  @include down($breakpoint-sm) {
-    display: block;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    background-color: $background-color-unfocused;
-  }
+	@include down($breakpoint-sm) {
+		display: block;
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		background-color: $background-color-unfocused;
+	}
 }
 
 .navLinkModal {
-  @include down($breakpoint-sm) {
-    width: 25%;
-    margin: 1em 1em 0 auto;
-    padding: $container-padding;
+	@include down($breakpoint-sm) {
+		width: 25%;
+		margin: 1em 1em 0 auto;
+		padding: $container-padding;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    gap: 1.5em;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		flex-direction: column;
+		gap: 1.5em;
 
-    background-color: $text-alt;
-    color: $text-primary;
-    border-radius: 5px;
-    box-shadow: $box-shadow;
-  }
+		background-color: $text-alt;
+		color: $text-primary;
+		border-radius: 5px;
+		box-shadow: $box-shadow;
+	}
 
-  @include down($breakpoint-xs) {
-    width: 30%;
-  }
+	@include down($breakpoint-xs) {
+		width: 30%;
+	}
 }
