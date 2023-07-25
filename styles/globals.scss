@@ -12,6 +12,7 @@ body {
   font-family: "Albert Sans", sans-serif;
   color: $text-primary;
   font-size: $text-size-body;
+  overflow-x: hidden;
 }
 
 * {

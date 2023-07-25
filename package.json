@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write src"
+    "format": "prettier --write src pages"
   },
   "dependencies": {
     "@fortawesome/fontawesome-common-types": "^6.4.0",
@@ -17,7 +17,8 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "animejs": "^3.2.1",
     "clsx": "^2.0.0",
-    "next": "13.4.12",
+    "framer-motion": "^10.13.1",
+    "next": "12.2.2",
     "prettier": "^3.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -30,7 +31,7 @@
     "@types/react": "18.2.16",
     "@types/react-dom": "18.2.7",
     "eslint": "8.45.0",
-    "eslint-config-next": "13.4.12",
+    "eslint-config-next": "12.2.2",
     "typescript": "5.1.6"
   }
 }
