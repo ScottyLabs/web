@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write src pages"
+    "format": "prettier --write src pages styles"
   },
   "dependencies": {
     "@fortawesome/fontawesome-common-types": "^6.4.0",
