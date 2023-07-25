@@ -1,50 +1,50 @@
-@import "~/styles/variables.scss";
-@import "~/styles/mixins.scss";
+@import '~/styles/variables.scss';
+@import '~/styles/mixins.scss';
 
 .timelineContainer {
-  border-collapse: collapse;
+	border-collapse: collapse;
 }
 
 .projectRow {
-  margin-top: -2px;
-  border-left: solid black 3px;
-  padding: 3em 0 3em 3em;
-  position: relative;
+	margin-top: -2px;
+	border-left: solid black 3px;
+	padding: 3em 0 3em 3em;
+	position: relative;
 
-  @include down($breakpoint-sm) {
-    border: none;
-    padding: 1em;
-    margin-top: 2em;
-  }
+	@include down($breakpoint-sm) {
+		border: none;
+		padding: 1em;
+		margin-top: 2em;
+	}
 }
 
 :is(.circleTop, .circleBottom) {
-  height: 2em;
-  width: 2em;
-  position: absolute;
-  background-color: $background-color;
-  transform: translate(-53%, 0);
+	height: 2em;
+	width: 2em;
+	position: absolute;
+	background-color: $background-color;
+	transform: translate(-53%, 0);
 
-  @include down($breakpoint-sm) {
-    display: none;
-  }
+	@include down($breakpoint-sm) {
+		display: none;
+	}
 }
 
 .circleTop {
-  top: 0;
-  left: 0;
+	top: 0;
+	left: 0;
 }
 
 .circleBottom {
-  bottom: 0;
-  left: 0;
-  display: none;
+	bottom: 0;
+	left: 0;
+	display: none;
 }
 
 .projectRow:last-of-type .circleBottom {
-  display: block;
+	display: block;
 
-  @include down($breakpoint-sm) {
-    display: none;
-  }
+	@include down($breakpoint-sm) {
+		display: none;
+	}
 }

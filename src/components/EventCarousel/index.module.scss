@@ -1,77 +1,77 @@
-@import "~/styles/variables.scss";
-@import "~/styles/mixins.scss";
+@import '~/styles/variables.scss';
+@import '~/styles/mixins.scss';
 
 .carouselContainer {
-  padding: 2em 0 5em 0;
-  box-sizing: content-box;
+	padding: 2em 0 5em 0;
+	box-sizing: content-box;
 }
 
 .carouselImageContainer {
-  position: relative;
-  text-align: center;
-  transition: filter 0.25s;
+	position: relative;
+	text-align: center;
+	transition: filter 0.25s;
 }
 
 .carouselImageContainer img {
-  pointer-events: inherit;
-  cursor: pointer;
+	pointer-events: inherit;
+	cursor: pointer;
 
-  &:hover {
-    filter: brightness(60%);
-  }
+	&:hover {
+		filter: brightness(60%);
+	}
 
-  &:hover + .carouselImageLabel {
-    opacity: 1;
-  }
+	&:hover + .carouselImageLabel {
+		opacity: 1;
+	}
 }
 
 .carouselImageLabel {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	pointer-events: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
-  color: $text-alt;
-  text-shadow: $text-shadow;
+	color: $text-alt;
+	text-shadow: $text-shadow;
 
-  opacity: 0;
-  transition: opacity 0.5s;
+	opacity: 0;
+	transition: opacity 0.5s;
 }
 
 .carouselImage {
-  height: auto;
-  box-shadow: $box-shadow;
-  aspect-ratio: 16 / 9;
+	height: auto;
+	box-shadow: $box-shadow;
+	aspect-ratio: 16 / 9;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: filter 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: filter 0.5s;
 }
 
 .navigator {
-  width: 30%;
-  margin: 2em auto 0 auto;
+	width: 30%;
+	margin: 2em auto 0 auto;
 
-  display: flex;
-  gap: 0.5em;
-  justify-content: center;
+	display: flex;
+	gap: 0.5em;
+	justify-content: center;
 }
 
 .navCircle {
-  cursor: pointer;
-  height: 0.5em;
+	cursor: pointer;
+	height: 0.5em;
 
-  @include down($breakpoint-sm) {
-    height: 0.3em;
-  }
+	@include down($breakpoint-sm) {
+		height: 0.3em;
+	}
 }
 
 .navCircleFocused {
-  color: $carousel-circle-focused;
+	color: $carousel-circle-focused;
 }
 
 .navCircleUnfocused {
-  color: $carousel-circle-unfocused;
+	color: $carousel-circle-unfocused;
 }

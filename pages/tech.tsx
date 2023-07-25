@@ -42,7 +42,7 @@ export default function Tech() {
           />
           <Project
             title="CMUEats"
-            softwareIcons={["javascript", "react"]}
+            softwareIcons={["typescript", "react"]}
             description={
               "CMUEats is your one-stop-shop for finding out what campus dining locations right now."
             }

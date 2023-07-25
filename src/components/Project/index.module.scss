@@ -1,95 +1,95 @@
-@import "~/styles/variables.scss";
-@import "~/styles/mixins.scss";
+@import '~/styles/variables.scss';
+@import '~/styles/mixins.scss';
 
 .projectContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 3em;
+	display: flex;
+	flex-direction: row;
+	gap: 3em;
 
-  @include down($breakpoint-md) {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 1em;
-  }
+	@include down($breakpoint-md) {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		gap: 1em;
+	}
 }
 
 .projectDetails {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .projectTitle {
-  @include down($breakpoint-md) {
-    text-align: center;
-  }
+	@include down($breakpoint-md) {
+		text-align: center;
+	}
 }
 
 .projectLink {
-  color: $text-primary;
-  text-decoration: none;
-  transition: transform 0.25s;
-  display: flex;
-  align-items: center;
+	color: $text-primary;
+	text-decoration: none;
+	transition: transform 0.25s;
+	display: flex;
+	align-items: center;
 
-  @include down($breakpoint-md) {
-    justify-content: center;
-  }
+	@include down($breakpoint-md) {
+		justify-content: center;
+	}
 
-  &:hover {
-    transform: translate(0, -3px);
-  }
+	&:hover {
+		transform: translate(0, -3px);
+	}
 }
 
 .projectLinkIcon {
-  margin-left: 1em;
-  opacity: 0.8;
+	margin-left: 1em;
+	opacity: 0.8;
 }
 
 .softwareIconContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
 
-  @include down($breakpoint-md) {
-    justify-content: center;
-  }
+	@include down($breakpoint-md) {
+		justify-content: center;
+	}
 }
 
 .softwareIcon {
-  height: 32px;
-  width: 32px;
+	height: 32px;
+	width: 32px;
 
-  @include down($breakpoint-sm) {
-    height: 25px;
-    width: 25px;
-  }
+	@include down($breakpoint-sm) {
+		height: 25px;
+		width: 25px;
+	}
 }
 
 .description {
-  margin-top: 1em;
+	margin-top: 1em;
 }
 
 .projectImageContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  @include between($breakpoint-md, $breakpoint-lg) {
-    max-width: 50%;
-  }
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	@include between($breakpoint-md, $breakpoint-lg) {
+		max-width: 50%;
+	}
 }
 
 .projectImage {
-  height: 20em;
-  width: auto;
-  box-shadow: $box-shadow;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: 0 0;
+	height: 20em;
+	width: auto;
+	box-shadow: $box-shadow;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	object-position: 0 0;
 
-  @include down($breakpoint-lg) {
-    width: 100%;
-    height: auto;
-  }
+	@include down($breakpoint-lg) {
+		width: 100%;
+		height: auto;
+	}
 }

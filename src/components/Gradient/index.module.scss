@@ -1,80 +1,80 @@
-@import "~/styles/variables.scss";
-@import "~/styles/mixins.scss";
+@import '~/styles/variables.scss';
+@import '~/styles/mixins.scss';
 
 .canvas {
-  height: 100%;
-  width: 100%;
-  --gradient-color-1: #{$gradient-color-1};
-  --gradient-color-2: #{$gradient-color-2};
-  --gradient-color-3: #{$gradient-color-3};
-  --gradient-color-4: #{$gradient-color-4};
-  --gradient-speed: #{$gradient-speed};
+	height: 100%;
+	width: 100%;
+	--gradient-color-1: #{$gradient-color-1};
+	--gradient-color-2: #{$gradient-color-2};
+	--gradient-color-3: #{$gradient-color-3};
+	--gradient-color-4: #{$gradient-color-4};
+	--gradient-speed: #{$gradient-speed};
 }
 
 .staticGradient {
-  position: absolute;
-  width: 100%;
-  height: 5em;
-  background: linear-gradient(90deg, $gradient-color-1, $gradient-color-2);
+	position: absolute;
+	width: 100%;
+	height: 5em;
+	background: linear-gradient(90deg, $gradient-color-1, $gradient-color-2);
 
-  @include down($breakpoint-md) {
-    height: 4em;
-  }
+	@include down($breakpoint-md) {
+		height: 4em;
+	}
 
-  @include down($breakpoint-sm) {
-    height: 3.5em;
-  }
+	@include down($breakpoint-sm) {
+		height: 3.5em;
+	}
 }
 
 .gradientContainer {
-  position: absolute;
-  width: 100%;
-  height: 40vw;
-  z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 40vw;
+	z-index: -1;
 
-  @include down($breakpoint-lg) {
-    height: 55vw;
-  }
+	@include down($breakpoint-lg) {
+		height: 55vw;
+	}
 
-  @include down($breakpoint-md) {
-    height: 60vw;
-  }
+	@include down($breakpoint-md) {
+		height: 60vw;
+	}
 
-  @include down($breakpoint-sm) {
-    height: 90vw;
-  }
+	@include down($breakpoint-sm) {
+		height: 90vw;
+	}
 
-  @include down($breakpoint-xs) {
-    height: 100vw;
-  }
+	@include down($breakpoint-xs) {
+		height: 100vw;
+	}
 }
 
 .gradient {
-  clip-path: url("#gradientClipPath");
+	clip-path: url('#gradientClipPath');
 }
 
 .gradientSafari {
-  height: 75%;
+	height: 75%;
 
-  @include down($breakpoint-lg) {
-    height: 70%;
-  }
+	@include down($breakpoint-lg) {
+		height: 70%;
+	}
 
-  @include down($breakpoint-sm) {
-    height: 75%;
-  }
+	@include down($breakpoint-sm) {
+		height: 75%;
+	}
 }
 
 .gradientPath {
-  @include down($breakpoint-md) {
-    display: none;
-  }
+	@include down($breakpoint-md) {
+		display: none;
+	}
 }
 
 .gradientPathSm {
-  display: none;
+	display: none;
 
-  @include down($breakpoint-md) {
-    display: block;
-  }
+	@include down($breakpoint-md) {
+		display: block;
+	}
 }
