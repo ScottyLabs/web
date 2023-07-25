@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-import Image from 'next/image';
-=======
 import Image from 'next/future/image';
->>>>>>> Stashed changes
 import Project from '../src/components/Project';
 import Timeline from '../src/components/Timeline';
 import Typography from '../src/components/Typography';
