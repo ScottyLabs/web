@@ -76,7 +76,7 @@ export default function Tech() {
 						title="scotty.lol"
 						softwareIcons={['typescript', 'mongodb', 'react']}
 						description={
-							'CMU Courses is a course browser built by and for CMU students. Bringing together course information, schedules and FCE data, it makes it possible for CMU students to plan their semesters and browse for courses.'
+							'Scottylol is an exciting search tool for CMU. It is ScottyLabs\' implementation of Facebook\'s internal bunnylol search tool.'
 						}
 						link="https://scotty.lol"
 						image={
