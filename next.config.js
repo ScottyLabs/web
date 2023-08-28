@@ -7,6 +7,12 @@ const nextConfig = {
 			allowFutureImage: true,
 		},
 	},
+	rewrites: async () => [
+		{
+			source: '/:path*',
+			destination: '/',
+		},
+	],
 };
 
 module.exports = nextConfig;
