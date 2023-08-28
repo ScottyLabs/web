@@ -47,23 +47,32 @@ export default function Home() {
 						/>
 					</div>
 					<div className={styles.meetingTimes}>
-						<Typography variant="header">Our Meetings</Typography>
+						<Typography variant="header">Meet Us!</Typography>
 						<br />
 						<Typography>
-							Weekly GBM: Thursdays, 5pm, POS 153
+							Club Fair: September 6, 4:30-6:30pm, The Cut
 						</Typography>
+						<br />
 						<Typography>
-							Committee Meetings: Saturdays, 2-4pm
+							First Weekly GBM: September 13, 5:30-6:30pm, Wean 5415
+						</Typography>
+						<br />
+						<Typography>
+							First Committee Work Sessions: September 16, 3-5pm
 						</Typography>
 						<div className={styles.meetingRooms}>
 							<Typography>Tech</Typography>
-							<Typography>POS 153</Typography>
+							<Typography>Wean Hall</Typography>
+							{/* <Typography>POS 153</Typography> */}
 							<Typography>Design</Typography>
-							<Typography>POS 152</Typography>
+							<Typography>Wean Hall</Typography>
+							{/* <Typography>POS 152</Typography> */}
 							<Typography>Finance</Typography>
-							<Typography>POS 147</Typography>
+							<Typography>Wean Hall</Typography>
+							{/* <Typography>POS 147</Typography> */}
 							<Typography>Events/Outreach</Typography>
-							<Typography>POS 151</Typography>
+							<Typography>Wean Hall</Typography>
+							{/* <Typography>POS 151</Typography> */}
 						</div>
 					</div>
 				</div>
