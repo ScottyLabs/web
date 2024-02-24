@@ -20,12 +20,10 @@ function FooterLink({
 	return (
 		<div className={styles.footerLink}>
 			<Link href={href} passHref>
-				<a>{icon}</a>
+				{icon}
 			</Link>
-			<Link href={href} passHref>
-				<a className={styles.footerLinkLabel}>
-					<Typography variant="subtitle">{label}</Typography>
-				</a>
+			<Link href={href} passHref className={styles.footerLinkLabel}>
+				<Typography variant="subtitle">{label}</Typography>
 			</Link>
 		</div>
 	);

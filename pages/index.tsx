@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import EventCarousel from '../src/components/EventCarousel';
 import Hero from '../src/components/Hero';
 import RoundButton from '../src/components/RoundButton';

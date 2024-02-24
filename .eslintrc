@@ -3,7 +3,9 @@
               "airbnb-typescript",
               "plugin:react/jsx-runtime", 
               "prettier",
-              "plugin:import/typescript"],
+              "plugin:import/typescript",
+              "next"],
+              
   "env": {
     "node": true,
     "es6": true,

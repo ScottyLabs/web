@@ -32,25 +32,22 @@ export default function Project({
 	);
 	if (link) {
 		projectTitle = (
-			<Link href={link} passHref>
-				<a
-					target="_blank"
-					rel="noreferrer"
-					className={styles.projectLink}
-				>
-					<Typography
-						variant="subheader"
-						className={styles.projectTitle}
-					>
-						{title}
-					</Typography>
-					<LinkIcon
-						className={clsx(
-							styles.softwareIcon,
-							styles.projectLinkIcon,
-						)}
-					/>
-				</a>
+			<Link
+				href={link}
+				passHref
+				target="_blank"
+				rel="noreferrer"
+				className={styles.projectLink}
+			>
+				<Typography variant="subheader" className={styles.projectTitle}>
+					{title}
+				</Typography>
+				<LinkIcon
+					className={clsx(
+						styles.softwareIcon,
+						styles.projectLinkIcon,
+					)}
+				/>
 			</Link>
 		);
 	}
