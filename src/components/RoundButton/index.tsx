@@ -17,17 +17,20 @@ export default function RoundButton({
 	onClick,
 }: Props) {
 	return (
-		<Link href={href ?? '#'} passHref>
-			<a target="_blank" className={styles.link}>
-				<div
-					className={clsx(styles.roundButton, className)}
-					onClick={onClick}
-				>
-					<Typography variant="button" className={styles.buttonLabel}>
-						{label}
-					</Typography>
-				</div>
-			</a>
+		<Link
+			href={href ?? '#'}
+			passHref
+			target="_blank"
+			className={styles.link}
+		>
+			<div
+				className={clsx(styles.roundButton, className)}
+				onClick={onClick}
+			>
+				<Typography variant="button" className={styles.buttonLabel}>
+					{label}
+				</Typography>
+			</div>
 		</Link>
 	);
 }

@@ -6,7 +6,7 @@ import styles from './index.module.scss';
  * Hero component containing the ScottyLabs icon
  * and the title
  */
-const Hero = () => {
+function Hero() {
 	return (
 		<div className={styles.heroContainer}>
 			<ScottyLabsIcon
@@ -18,6 +18,6 @@ const Hero = () => {
 			</Typography>
 		</div>
 	);
-};
+}
 
 export default Hero;

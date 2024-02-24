@@ -2,11 +2,11 @@
 
 ## Getting Started
 
-Install the dependencies and run the server:
+Install the dependencies and run the server via [Bun](https://bun.sh):
 
-```bash
-npm install
-npm run dev
+```
+bun install
+bun start
 ```
 
 After running these commands, you will see the changes on [http://localhost:3000](http://localhost:3000/)

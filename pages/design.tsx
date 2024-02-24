@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Project from '../src/components/Project';
 import Timeline from '../src/components/Timeline';
 import Typography from '../src/components/Typography';
@@ -11,7 +11,7 @@ import styles from '../styles/Design.module.scss';
 
 export default function Design() {
 	return (
-		<BaseLayout collapsedNavBar={true}>
+		<BaseLayout collapsedNavBar>
 			<div className={styles.pageContent}>
 				<Typography variant="header">Design</Typography>
 				<div className={styles.aboutSection}>
@@ -50,9 +50,7 @@ export default function Design() {
 					<Project
 						title="Portfolio Development Fair Branding"
 						softwareIcons={['illustrator', 'figma', 'procreate']}
-						description={
-							'Promotional Graphics and Branding for PDF, a series of workshops, lectures and exercises practicing web development'
-						}
+						description="Promotional Graphics and Branding for PDF, a series of workshops, lectures and exercises practicing web development"
 						image={
 							<Image
 								src="/design/pdf.png"
@@ -65,9 +63,7 @@ export default function Design() {
 					<Project
 						title="TartanHacks Registration UI/UX"
 						softwareIcons={['figma', 'illustrator']}
-						description={
-							'UI/UX for the TartanHacks Registration and Dashboard apps'
-						}
+						description="UI/UX for the TartanHacks Registration and Dashboard apps"
 						image={
 							<Image
 								src="/design/tartanhacks-registration.jpg"
@@ -80,9 +76,7 @@ export default function Design() {
 					<Project
 						title="Crash Course Branding"
 						softwareIcons={['illustrator', 'figma', 'procreate']}
-						description={
-							'Promotional Graphics for Crash Course, a collection of software workshops hosted by ScottyLabs'
-						}
+						description="Promotional Graphics for Crash Course, a collection of software workshops hosted by ScottyLabs"
 						image={
 							<Image
 								src="/design/crash-course.png"

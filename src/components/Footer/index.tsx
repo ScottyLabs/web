@@ -8,7 +8,7 @@ import MediumIcon from '../../icons/MediumIcon';
 import Typography from '../Typography';
 import styles from './index.module.scss';
 
-const FooterLink = ({
+function FooterLink({
 	href,
 	icon,
 	label,
@@ -16,22 +16,20 @@ const FooterLink = ({
 	href: string;
 	icon: JSX.Element;
 	label: string;
-}) => {
+}) {
 	return (
 		<div className={styles.footerLink}>
 			<Link href={href} passHref>
-				<a>{icon}</a>
+				{icon}
 			</Link>
-			<Link href={href} passHref>
-				<a className={styles.footerLinkLabel}>
-					<Typography variant="subtitle">{label}</Typography>
-				</a>
+			<Link href={href} passHref className={styles.footerLinkLabel}>
+				<Typography variant="subtitle">{label}</Typography>
 			</Link>
 		</div>
 	);
-};
+}
 
-const Footer = () => {
+function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<svg width={0} height={0}>
@@ -78,6 +76,6 @@ const Footer = () => {
 			/>
 		</footer>
 	);
-};
+}
 
 export default Footer;

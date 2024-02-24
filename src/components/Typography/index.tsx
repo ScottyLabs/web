@@ -9,7 +9,7 @@ export type TypographyVariant =
 	| 'subtitle'
 	| 'button';
 
-const Typography = ({
+function Typography({
 	variant = 'body',
 	children,
 	className,
@@ -19,18 +19,18 @@ const Typography = ({
 	children?: string;
 	className?: String;
 	centered?: boolean;
-}) => {
+}) {
 	return (
 		<div
 			className={clsx(
 				className,
 				styles[variant],
-				centered ? styles['centered'] : null,
+				centered ? styles.centered : null,
 			)}
 		>
 			{children}
 		</div>
 	);
-};
+}
 
 export default Typography;

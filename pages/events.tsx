@@ -1,4 +1,4 @@
-import Image from 'next/future/image';
+import Image from 'next/image';
 import Event from '../src/components/Event';
 import Timeline from '../src/components/Timeline';
 import Typography from '../src/components/Typography';
@@ -7,7 +7,7 @@ import styles from '../styles/Events.module.scss';
 
 export default function Events() {
 	return (
-		<BaseLayout collapsedNavBar={true}>
+		<BaseLayout collapsedNavBar>
 			<div className={styles.pageContent}>
 				<Typography variant="header">Events</Typography>
 				<div className={styles.aboutSection}>
@@ -20,9 +20,7 @@ export default function Events() {
 				<Timeline className={styles.projectTimeline}>
 					<Event
 						title="Portfolio Development Fair"
-						description={
-							'Portfolio Development Fair is a weekend long event where participants learn about web development through student-led talks and even get to create their own website'
-						}
+						description="Portfolio Development Fair is a weekend long event where participants learn about web development through student-led talks and even get to create their own website"
 						date="October 2022"
 						image={
 							<Image

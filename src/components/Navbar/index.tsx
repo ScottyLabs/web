@@ -9,7 +9,7 @@ import styles from './index.module.scss';
  * Toolbar containing just the navigation elements without
  * a gradient background
  */
-const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
+function Toolbar({ collapsed }: { collapsed: Boolean }) {
 	const [mobileLinksVisible, setMobileLinksVisible] = useState(false);
 
 	return (
@@ -17,9 +17,7 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
 			<div>
 				{collapsed ? (
 					<Link href="/" passHref>
-						<a>
-							<ScottyLabsIcon className={styles.navIcon} />
-						</a>
+						<ScottyLabsIcon className={styles.navIcon} />
 					</Link>
 				) : null}
 			</div>
@@ -41,20 +39,26 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
 							{/* <Link href="/about" passHref>
                 <a className={`link ${styles.navLink}`}>/about</a>
               </Link> */}
-							<Link href="/tech" passHref>
-								<a className={`link ${styles.navLink}`}>
-									/tech
-								</a>
+							<Link
+								href="/tech"
+								passHref
+								className={`link ${styles.navLink}`}
+							>
+								/tech
 							</Link>
-							<Link href="/design" passHref>
-								<a className={`link ${styles.navLink}`}>
-									/design
-								</a>
+							<Link
+								href="/design"
+								passHref
+								className={`link ${styles.navLink}`}
+							>
+								/design
 							</Link>
-							<Link href="/events" passHref>
-								<a className={`link ${styles.navLink}`}>
-									/events
-								</a>
+							<Link
+								href="/events"
+								passHref
+								className={`link ${styles.navLink}`}
+							>
+								/events
 							</Link>
 						</div>
 					</div>
@@ -64,32 +68,44 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
 				{/* <Link href="/about" passHref>
           <a className={`link ${styles.navLink}`}>/about</a>
         </Link> */}
-				<Link href="/tech" passHref>
-					<a className={`link ${styles.navLink}`}>/tech</a>
+				<Link
+					href="/tech"
+					passHref
+					className={`link ${styles.navLink}`}
+				>
+					/tech
 				</Link>
-				<Link href="/design" passHref>
-					<a className={`link ${styles.navLink}`}>/design</a>
+				<Link
+					href="/design"
+					passHref
+					className={`link ${styles.navLink}`}
+				>
+					/design
 				</Link>
-				<Link href="/events" passHref>
-					<a className={`link ${styles.navLink}`}>/events</a>
+				<Link
+					href="/events"
+					passHref
+					className={`link ${styles.navLink}`}
+				>
+					/events
 				</Link>
 			</div>
 		</div>
 	);
-};
+}
 
 /**
  * Navbar with a gradient background.
  * If `collapsed` is true, it uses a smaller static gradient background.
  * If `collapsed` is false, it uses a larger animated gradient background.
  */
-const Navbar = ({ collapsed = false }: { collapsed?: Boolean }) => {
+function Navbar({ collapsed = false }: { collapsed?: Boolean }) {
 	return (
 		<div>
 			<Gradient expanded={!collapsed} />
 			<Toolbar collapsed={collapsed} />
 		</div>
 	);
-};
+}
 
 export default Navbar;

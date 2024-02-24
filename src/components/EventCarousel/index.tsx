@@ -1,7 +1,7 @@
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -47,7 +47,7 @@ function CarouselImage({ src, width, height, label }: CarouselImageProps) {
 	return (
 		<div className={styles.carouselImageContainer}>
 			<Image
-				priority={true}
+				priority
 				key={label}
 				src={src}
 				alt={label}
@@ -72,23 +72,23 @@ export default function EventCarousel({ className }: Props) {
 		<div className={clsx(styles.carouselContainer, className)}>
 			<Carousel
 				selectedItem={index}
-				centerMode={true}
-				swipeable={true}
-				emulateTouch={true}
+				centerMode
+				swipeable
+				emulateTouch
 				showThumbs={false}
 				showArrows={false}
 				showStatus={false}
 				showIndicators={false}
 				centerSlidePercentage={60}
-				onChange={(index) => setIndex(index)}
+				onChange={(newIndex) => setIndex(newIndex)}
 			>
-				{images.map((imageProps, index) => (
-					<CarouselImage key={index} {...imageProps} />
+				{images.map((imageProps, imageIndex) => (
+					<CarouselImage key={imageIndex} {...imageProps} />
 				))}
 			</Carousel>
 			<div className={styles.navigator}>
 				{images.map((_, circleIndex) => {
-					const focused = circleIndex == index;
+					const focused = circleIndex === index;
 					const focusClass = focused
 						? styles.navCircleFocused
 						: styles.navCircleUnfocused;

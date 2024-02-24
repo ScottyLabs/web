@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import EventCarousel from '../src/components/EventCarousel';
 import Hero from '../src/components/Hero';
 import RoundButton from '../src/components/RoundButton';
@@ -54,7 +54,8 @@ export default function Home() {
 						</Typography>
 						<br />
 						<Typography>
-							First Weekly GBM: September 13, 5:30-6:30pm, Wean 5415
+							First Weekly GBM: September 13, 5:30-6:30pm, Wean
+							5415
 						</Typography>
 						<br />
 						<Typography>
