@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Event from '../src/components/Event';
 import Timeline from '../src/components/Timeline';
 import Typography from '../src/components/Typography';
