@@ -995,13 +995,13 @@ export default function OpenStreetMapIcon({
 					fill="url(#X)"
 				>
 					<tspan y={69.184} x={99.839}>
-						{'01011001'}
+						01011001
 					</tspan>
 					<tspan y={93.934} x={99.839}>
-						{'00110101'}
+						00110101
 					</tspan>
 					<tspan y={118.684} x={99.839}>
-						{'10010011'}
+						10010011
 					</tspan>
 				</text>
 				<text
@@ -1015,13 +1015,13 @@ export default function OpenStreetMapIcon({
 					fill="url(#Y)"
 				>
 					<tspan y={67.898} x={99.41}>
-						{'01011001'}
+						01011001
 					</tspan>
 					<tspan y={92.648} x={99.41}>
-						{'00110101'}
+						00110101
 					</tspan>
 					<tspan y={117.398} x={99.41}>
-						{'10010011'}
+						10010011
 					</tspan>
 				</text>
 				<path

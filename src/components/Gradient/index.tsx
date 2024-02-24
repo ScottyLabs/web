@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import isSafari from '../../utils/isSafari';
 import styles from './index.module.scss';
@@ -34,9 +33,13 @@ function AnimatedGradient({ className }: SubGradientProps) {
 	);
 }
 
-const AnimatedGradientNoSSR = dynamic(() => import('./AnimatedGradient'), {
-	ssr: false,
-});
+const isSSR = () => typeof window === 'undefined';
+
+// Wrapper component to handle client-side only rendering
+function AnimatedGradientNoSSRWrapper(props: SubGradientProps) {
+	// Only render the AnimatedGradient component on the client-side
+	return !isSSR() ? <AnimatedGradient {...props} /> : null;
+}
 
 /**
  * Expanded gradient with a wave-masked bottom border.
@@ -45,7 +48,7 @@ const AnimatedGradientNoSSR = dynamic(() => import('./AnimatedGradient'), {
 function ExpandedGradient({ className }: SubGradientProps) {
 	return (
 		<div className={clsx(styles.gradientContainer, className)}>
-			<AnimatedGradientNoSSR
+			<AnimatedGradientNoSSRWrapper
 				className={clsx(
 					isSafari() ? styles.gradientSafari : styles.gradient,
 				)}

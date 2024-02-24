@@ -9,7 +9,7 @@ import styles from './index.module.scss';
  * Toolbar containing just the navigation elements without
  * a gradient background
  */
-const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
+function Toolbar({ collapsed }: { collapsed: Boolean }) {
 	const [mobileLinksVisible, setMobileLinksVisible] = useState(false);
 
 	return (
@@ -76,20 +76,20 @@ const Toolbar = ({ collapsed }: { collapsed: Boolean }) => {
 			</div>
 		</div>
 	);
-};
+}
 
 /**
  * Navbar with a gradient background.
  * If `collapsed` is true, it uses a smaller static gradient background.
  * If `collapsed` is false, it uses a larger animated gradient background.
  */
-const Navbar = ({ collapsed = false }: { collapsed?: Boolean }) => {
+function Navbar({ collapsed = false }: { collapsed?: Boolean }) {
 	return (
 		<div>
 			<Gradient expanded={!collapsed} />
 			<Toolbar collapsed={collapsed} />
 		</div>
 	);
-};
+}
 
 export default Navbar;

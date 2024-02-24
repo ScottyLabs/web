@@ -77,7 +77,7 @@ export default function Project({
 				{image != null
 					? wrapElement(image as JSX.Element)({
 							className: styles.projectImage,
-					  })
+						})
 					: null}
 			</div>
 		</div>

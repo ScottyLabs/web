@@ -17,7 +17,7 @@ export default function IllustratorIcon({
 				<defs>
 					<style>{'.b{fill:#ff9a00}'}</style>
 				</defs>
-				<title>{'adobe-illustrator'}</title>
+				<title>adobe-illustrator</title>
 				<rect
 					width={511.45}
 					height={498.66}

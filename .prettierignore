@@ -1,1 +1,9 @@
-styles/variables.scss
+# Ignore artifacts:
+build
+dist
+coverage
+
+*.json
+*.config.ts
+*.node.json
+.github

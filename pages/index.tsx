@@ -54,7 +54,8 @@ export default function Home() {
 						</Typography>
 						<br />
 						<Typography>
-							First Weekly GBM: September 13, 5:30-6:30pm, Wean 5415
+							First Weekly GBM: September 13, 5:30-6:30pm, Wean
+							5415
 						</Typography>
 						<br />
 						<Typography>

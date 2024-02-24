@@ -35,7 +35,7 @@ export default function Event({
 				{image != null
 					? wrapElement(image as JSX.Element)({
 							className: styles.eventImage,
-					  })
+						})
 					: null}
 			</div>
 		</div>

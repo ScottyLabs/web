@@ -9,6 +9,6 @@ interface Props {
  * Convenience component for conditional rendering
  */
 export default function Show({ when, children }: Props) {
-	if (when) return <>{children}</>;
+	if (when) return children;
 	return null;
 }

@@ -7,7 +7,7 @@ import styles from '../styles/Tech.module.scss';
 
 export default function Tech() {
 	return (
-		<BaseLayout collapsedNavBar={true}>
+		<BaseLayout collapsedNavBar>
 			<div className={styles.pageContent}>
 				<Typography variant="header">Tech</Typography>
 				<div className={styles.aboutSection}>
@@ -27,9 +27,7 @@ export default function Tech() {
 							'tailwind',
 							'mongodb',
 						]}
-						description={
-							'CMU Courses is a course browser built by and for CMU students. Bringing together course information, schedules and FCE data, it makes it possible for CMU students to plan their semesters and browse for courses.'
-						}
+						description="CMU Courses is a course browser built by and for CMU students. Bringing together course information, schedules and FCE data, it makes it possible for CMU students to plan their semesters and browse for courses."
 						link="https://cmucourses.com"
 						image={
 							<Image
@@ -43,9 +41,7 @@ export default function Tech() {
 					<Project
 						title="CMUEats"
 						softwareIcons={['typescript', 'react']}
-						description={
-							'CMUEats is your one-stop-shop for finding out what campus dining locations right now.'
-						}
+						description="CMUEats is your one-stop-shop for finding out what campus dining locations right now."
 						link="https://cmueats.com/"
 						image={
 							<Image
@@ -59,9 +55,7 @@ export default function Tech() {
 					<Project
 						title="Lost and Found"
 						softwareIcons={['typescript', 'react', 'mongodb']}
-						description={
-							'Official lost-and-found website adopted by CMU'
-						}
+						description="Official lost-and-found website adopted by CMU"
 						link="https://lostandfound.andrew.cmu.edu/"
 						image={
 							<Image
@@ -76,7 +70,7 @@ export default function Tech() {
 						title="scotty.lol"
 						softwareIcons={['typescript', 'mongodb', 'react']}
 						description={
-							'Scottylol is an exciting search tool for CMU. It is ScottyLabs\' implementation of Facebook\'s internal bunnylol search tool.'
+							"Scottylol is an exciting search tool for CMU. It is ScottyLabs' implementation of Facebook's internal bunnylol search tool."
 						}
 						link="https://scotty.lol"
 						image={
@@ -96,9 +90,7 @@ export default function Tech() {
 							'javascript',
 							'flutter',
 						]}
-						description={
-							'Providing indoor maps and navigation for the CMU campus'
-						}
+						description="Providing indoor maps and navigation for the CMU campus"
 					/>
 					<Project
 						title="TartanHacks Website"
@@ -119,9 +111,7 @@ export default function Tech() {
 					<Project
 						title="TartanHacks Registration System"
 						softwareIcons={['typescript', 'react', 'nextjs']}
-						description={
-							'Registration portal for hackers to sign up for TartanHacks'
-						}
+						description="Registration portal for hackers to sign up for TartanHacks"
 						image={
 							<Image
 								src="/tech/tartanhacks-registration.jpg"
@@ -134,9 +124,7 @@ export default function Tech() {
 					<Project
 						title="TartanHacks Dashboard"
 						softwareIcons={['flutter']}
-						description={
-							'A mobile app that hackers use to navigate TartanHacks during the live event'
-						}
+						description="A mobile app that hackers use to navigate TartanHacks during the live event"
 						image={
 							<Image
 								src="/tech/tartanhacks-dashboard.jpg"
@@ -149,9 +137,7 @@ export default function Tech() {
 					<Project
 						title="TartanHacks Helix"
 						softwareIcons={['typescript', 'mongodb']}
-						description={
-							'Helix is the common backend system that connects our entire TartanHacks software suite together'
-						}
+						description="Helix is the common backend system that connects our entire TartanHacks software suite together"
 						image={
 							<Image
 								src="/tech/tartanhacks-backend.png"
