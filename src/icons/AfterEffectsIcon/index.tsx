@@ -1,5 +1,5 @@
 import BaseIcon from '../BaseIcon';
-import styles from '../styles/index.module.scss';
+import styles from 'styles/index.module.scss';
 import { SvgIconProps } from '../SvgIcon';
 
 export default function AfterEffectsIcon({

@@ -1,10 +1,10 @@
 import Image from 'next/legacy/image';
-import EventCarousel from '../src/components/EventCarousel';
-import Hero from '../src/components/Hero';
-import RoundButton from '../src/components/RoundButton';
-import Typography from '../src/components/Typography';
-import BaseLayout from '../src/layouts/BaseLayout';
-import styles from '../styles/Home.module.scss';
+import EventCarousel from 'components/EventCarousel';
+import Hero from 'components/Hero';
+import RoundButton from 'components/RoundButton';
+import Typography from 'components/Typography';
+import BaseLayout from 'layouts/BaseLayout';
+import styles from 'styles/Home.module.scss';
 
 export default function Home() {
 	return (

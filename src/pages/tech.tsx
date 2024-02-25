@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Project from '../src/components/Project';
-import Timeline from '../src/components/Timeline';
-import Typography from '../src/components/Typography';
-import BaseLayout from '../src/layouts/BaseLayout';
-import styles from '../styles/Tech.module.scss';
+import Project from 'components/Project';
+import Timeline from 'components/Timeline';
+import Typography from 'components/Typography';
+import BaseLayout from 'layouts/BaseLayout';
+import styles from 'styles/Tech.module.scss';
 
 export default function Tech() {
 	return (

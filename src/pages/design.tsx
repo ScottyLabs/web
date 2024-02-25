@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import Project from '../src/components/Project';
-import Timeline from '../src/components/Timeline';
-import Typography from '../src/components/Typography';
-import AfterEffectsIcon from '../src/icons/AfterEffectsIcon';
-import FigmaIcon from '../src/icons/FigmaIcon';
-import IllustratorIcon from '../src/icons/IllustratorIcon';
-import ProcreateIcon from '../src/icons/ProcreateIcon';
-import BaseLayout from '../src/layouts/BaseLayout';
-import styles from '../styles/Design.module.scss';
+import Project from 'components/Project';
+import Timeline from 'components/Timeline';
+import Typography from 'components/Typography';
+import AfterEffectsIcon from 'icons//AfterEffectsIcon';
+import FigmaIcon from 'icons//FigmaIcon';
+import IllustratorIcon from 'icons//IllustratorIcon';
+import ProcreateIcon from 'icons//ProcreateIcon';
+import BaseLayout from 'layouts/BaseLayout';
+import styles from 'styles/Design.module.scss';
 
 export default function Design() {
 	return (

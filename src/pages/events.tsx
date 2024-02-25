@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import Event from '../src/components/Event';
-import Timeline from '../src/components/Timeline';
-import Typography from '../src/components/Typography';
-import BaseLayout from '../src/layouts/BaseLayout';
-import styles from '../styles/Events.module.scss';
+import Event from 'components/Event';
+import Timeline from 'components/Timeline';
+import Typography from 'components/Typography';
+import BaseLayout from 'layouts/BaseLayout';
+import styles from 'styles/Events.module.scss';
 
 export default function Events() {
 	return (

@@ -8,9 +8,9 @@
     "build": "next build",
     "start": "next start",
     "test": "bun test",
-    "lint": "bunx eslint src pages",
-    "lint-fix": "bunx eslint --fix src pages",
-    "format": "prettier --write src pages",
+    "lint": "bunx eslint src",
+    "lint-fix": "bunx eslint --fix src",
+    "format": "prettier --write src",
     "coverage": "bun test --coverage"
   },
   "dependencies": {
