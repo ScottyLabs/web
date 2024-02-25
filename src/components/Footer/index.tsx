@@ -19,10 +19,15 @@ function FooterLink({
 }) {
 	return (
 		<div className={styles.footerLink}>
-			<Link href={href} passHref>
+			<Link href={href} target="_blank" passHref>
 				{icon}
 			</Link>
-			<Link href={href} passHref className={styles.footerLinkLabel}>
+			<Link
+				href={href}
+				target="_blank"
+				passHref
+				className={styles.footerLinkLabel}
+			>
 				<Typography variant="subtitle">{label}</Typography>
 			</Link>
 		</div>
@@ -65,7 +70,7 @@ function Footer() {
 				label="Medium"
 			/>
 			<FooterLink
-				href="http://go.scottylabs.org/slack"
+				href="https://go.scottylabs.org/slack"
 				icon={<SlackIcon className={styles.footerIcon} />}
 				label="Slack"
 			/>
