@@ -1,6 +1,6 @@
+import styles from 'styles/index.module.scss';
 import BaseIcon from '../BaseIcon';
 import { SvgIconProps } from '../SvgIcon';
-import styles from 'styles/index.module.scss';
 
 export default function MongoDbIcon({
 	className,
