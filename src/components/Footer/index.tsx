@@ -50,17 +50,17 @@ function Footer() {
 				</defs>
 			</svg>
 			<FooterLink
-				href="https://instagram.com/cmu.scottylabs"
+				href="https://go.scottylabs.org/instagram"
 				icon={<InstagramIcon className={styles.footerIcon} />}
 				label="Instagram"
 			/>
 			<FooterLink
-				href="https://www.facebook.com/ScottyLabs"
+				href="https://go.scottylabs.org/facebook"
 				icon={<FacebookIcon className={styles.footerIcon} />}
 				label="Facebook"
 			/>
 			<FooterLink
-				href="https://medium.com/tartanhacks"
+				href="https://go.scottylabs.org/medium"
 				icon={<MediumIcon className={styles.footerIcon} />}
 				label="Medium"
 			/>
