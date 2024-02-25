@@ -70,7 +70,7 @@ function Footer() {
 				label="Slack"
 			/>
 			<FooterLink
-				href="mailto://hello@scottylabs.org"
+				href="mailto:hello@scottylabs.org"
 				icon={<MailIcon className={styles.footerIcon} />}
 				label="Email us!"
 			/>

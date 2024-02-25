@@ -50,30 +50,26 @@ export default function Home() {
 						<Typography variant="header">Meet Us!</Typography>
 						<br />
 						<Typography>
-							Club Fair: September 6, 4:30-6:30pm, The Cut
+							Weekly GBMs: Tuesdays, 5:30-6:30pm, Posner 153
 						</Typography>
 						<br />
 						<Typography>
-							First Weekly GBM: September 13, 5:30-6:30pm, Wean
-							5415
-						</Typography>
-						<br />
-						<Typography>
-							First Committee Work Sessions: September 16, 3-5pm
+							Committee Work Sessions: Saturdays, 3-5pm, Posner
+							Hall
 						</Typography>
 						<div className={styles.meetingRooms}>
 							<Typography>Tech</Typography>
-							<Typography>Wean Hall</Typography>
-							{/* <Typography>POS 153</Typography> */}
+							<Typography>Posner 151</Typography>
+							{/* <Typography>Example</Typography> */}
 							<Typography>Design</Typography>
-							<Typography>Wean Hall</Typography>
-							{/* <Typography>POS 152</Typography> */}
-							<Typography>Finance</Typography>
-							<Typography>Wean Hall</Typography>
-							{/* <Typography>POS 147</Typography> */}
-							<Typography>Events/Outreach</Typography>
-							<Typography>Wean Hall</Typography>
-							{/* <Typography>POS 151</Typography> */}
+							<Typography>Posner 145</Typography>
+							{/* <Typography>Example</Typography> */}
+							<Typography>Labrador</Typography>
+							<Typography>Posner 146</Typography>
+							{/* <Typography>Example</Typography> */}
+							<Typography>Events/Outreach/Finance</Typography>
+							<Typography>Posner 147</Typography>
+							{/* <Typography>Example</Typography> */}
 						</div>
 					</div>
 				</div>
