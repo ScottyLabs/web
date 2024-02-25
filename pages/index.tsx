@@ -54,7 +54,8 @@ export default function Home() {
 						</Typography>
 						<br />
 						<Typography>
-							Committee Work Sessions: Saturdays, 3-5pm, Posner Hall
+							Committee Work Sessions: Saturdays, 3-5pm, Posner
+							Hall
 						</Typography>
 						<div className={styles.meetingRooms}>
 							<Typography>Tech</Typography>
