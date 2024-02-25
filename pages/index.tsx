@@ -50,7 +50,7 @@ export default function Home() {
 						<Typography variant="header">Meet Us!</Typography>
 						<br />
 						<Typography>
-							Tuesdays, 5:30-6:30pm, Posner 153
+							Weekly GBMs: Tuesdays, 5:30-6:30pm, Posner 153
 						</Typography>
 						<br />
 						<Typography>
