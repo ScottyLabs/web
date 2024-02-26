@@ -27,7 +27,7 @@ export default function Labrador() {
 							// 'react-native',
 							// 'firebase',
 						]}
-						description="Centralized grocery and expense management for housemates. Automated receipt splitting and shopping list tracking.."
+						description="Centralized grocery and expense management for housemates. Automated receipt splitting and shopping list tracking."
 						// link="https://N/A.com/"
 						// image={
 						// 	<Image
