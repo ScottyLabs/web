@@ -6,6 +6,7 @@ Install the dependencies and run the server via [Bun](https://bun.sh):
 
 ```
 bun install
+bun run build
 bun start
 ```
 
