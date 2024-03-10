@@ -16,7 +16,7 @@ After running these commands, you will see the changes on [http://localhost:3000
 
 Claim an [issue](https://github.com/ScottyLabs/web/issues) by assigning it to yourself. Then, create a branch for the issue you're working on. Follow the `<feature>` naming convention for your branch.
 
-e.g. `Add-Prettier-Support
+e.g. `Add-Prettier-Support`
 
 ## Merging your PR
 
