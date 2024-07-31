@@ -17,7 +17,7 @@ export default function Sponsors() {
 							You don&apos;t have a PDF viewer for this browser.
 							You can{' '}
 							<a href={sponsorPacketURL}>
-								click here to view the sponsor packet.
+								click here to view the sponsorship packet.
 							</a>
 						</p>
 					</object>
