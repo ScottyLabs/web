@@ -14,10 +14,10 @@ export default function Sponsors() {
 						className={styles.sponsorPacket}
 					>
 						<p>
-							You don`&apos;`t have a PDF viewer for this browser.
+							You don&apos;t have a PDF viewer for this browser.
 							You can{' '}
 							<a href={sponsorPacketURL}>
-								click here to download the sponsor packet.
+								click here to view the sponsor packet.
 							</a>
 						</p>
 					</object>
