@@ -60,6 +60,13 @@ function Toolbar({ collapsed }: { collapsed: Boolean }) {
 							>
 								/events
 							</Link>
+							<Link
+								href="/sponsors"
+								passHref
+								className={`link ${styles.navLink}`}
+							>
+								/sponsors
+							</Link>
 						</div>
 					</div>
 				) : null}
@@ -88,6 +95,13 @@ function Toolbar({ collapsed }: { collapsed: Boolean }) {
 					className={`link ${styles.navLink}`}
 				>
 					/events
+				</Link>
+				<Link
+					href="/sponsors"
+					passHref
+					className={`link ${styles.navLink}`}
+				>
+					/sponsors
 				</Link>
 			</div>
 		</div>
