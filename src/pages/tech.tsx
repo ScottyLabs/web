@@ -53,6 +53,26 @@ export default function Tech() {
 						}
 					/>
 					<Project
+						title="CMUMaps"
+						softwareIcons={[
+							'openstreetmap',
+							'typescript',
+							'react',
+							'nextjs',
+							'tailwind',
+						]}
+						link="https://cmumaps.com"
+						description="Providing indoor maps and navigation for the CMU campus"
+						image={
+							<Image
+								src="/tech/cmumaps.png"
+								width={1920}
+								height={1080}
+								alt="CMU Maps"
+							/>
+						}
+					/>
+					<Project
 						title="Lost and Found"
 						softwareIcons={['typescript', 'react', 'mongodb']}
 						description="Official lost-and-found website adopted by CMU"
@@ -81,16 +101,6 @@ export default function Tech() {
 								alt="scotty.lol"
 							/>
 						}
-					/>
-					<Project
-						title="ScottyMaps"
-						softwareIcons={[
-							'openstreetmap',
-							'java',
-							'javascript',
-							'flutter',
-						]}
-						description="Providing indoor maps and navigation for the CMU campus"
 					/>
 					<Project
 						title="TartanHacks Website"
