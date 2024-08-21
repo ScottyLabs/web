@@ -55,7 +55,7 @@ export default function Tech() {
 					<Project
 						title="CMUMaps"
 						softwareIcons={[
-							'openstreetmap',
+							'applemapkit',
 							'typescript',
 							'react',
 							'nextjs',

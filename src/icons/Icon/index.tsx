@@ -19,6 +19,7 @@ import ReactIcon from '../ReactIcon';
 import ScottyLabsIcon from '../ScottyLabsIcon';
 import TailwindIcon from '../TailwindIcon';
 import TypeScriptIcon from '../TypeScriptIcon';
+import AppleMapKitIcon from '../AppleMapKitIcon';
 
 const IconMapping = {
 	'after-effects': <AfterEffectsIcon />,
@@ -41,6 +42,7 @@ const IconMapping = {
 	scottylabs: <ScottyLabsIcon />,
 	tailwind: <TailwindIcon />,
 	typescript: <TypeScriptIcon />,
+	applemapkit: <AppleMapKitIcon />,
 };
 
 export type IconName = keyof typeof IconMapping;
