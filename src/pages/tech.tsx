@@ -4,6 +4,8 @@ import Timeline from 'components/Timeline';
 import Typography from 'components/Typography';
 import BaseLayout from 'layouts/BaseLayout';
 import styles from 'styles/Tech.module.scss';
+import Link from 'next/link';
+import NotionIcon from '../icons/NotionIcon';
 
 export default function Tech() {
 	return (
@@ -15,6 +17,20 @@ export default function Tech() {
 						The Tech committee builds various fun software projects
 						across the stack for the campus community!
 					</Typography>
+					<div className={styles.notion}>
+						<Typography variant="body">
+							Interested in joining our team? View our notion page
+							here:
+						</Typography>
+						<Link
+							href="https://scottylabs-cmu.notion.site/b6926a8fd31044d1bcf2be671674b7c9"
+							target="_blank"
+							passHref
+							className={styles.notionLink}
+						>
+							<NotionIcon className={styles.notionIcon} />
+						</Link>
+					</div>
 				</div>
 				<Timeline className={styles.projectTimeline}>
 					<Project
