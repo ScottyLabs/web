@@ -59,3 +59,32 @@
 .projectTimeline {
 	margin-top: 5em;
 }
+
+.notion {
+	display: flex;
+}
+
+.notionLink {
+	margin-left: 1em;
+	transition: transform 0.25s;
+	&:hover {
+		transform: translate(0, -3px);
+	}
+}
+
+.notionIcon {
+	width: 2em;
+	cursor: pointer;
+
+	svg {
+		fill: white;
+	}
+
+	@include down($breakpoint-md) {
+		width: 1.5em;
+	}
+
+	@include down($breakpoint-sm) {
+		width: 1em;
+	}
+}
