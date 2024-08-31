@@ -173,7 +173,10 @@ export default function Tech() {
 							/>
 						}
 					/>
-					<Project title="Join the team!" />
+					<Project
+						title="Join the team!"
+						link="https://scottylabs-cmu.notion.site/b6926a8fd31044d1bcf2be671674b7c9"
+					/>
 				</Timeline>
 			</div>
 		</BaseLayout>
