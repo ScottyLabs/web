@@ -57,7 +57,7 @@ export default function Tech() {
 					<Project
 						title="CMUEats"
 						softwareIcons={['typescript', 'react']}
-						description="CMUEats is your one-stop-shop for finding out what campus dining locations right now."
+						description="CMUEats is your one-stop-shop for finding out what campus dining locations are open right now."
 						link="https://cmueats.com/"
 						image={
 							<Image
