@@ -19,15 +19,15 @@ export default function Events() {
 				</div>
 				<Timeline className={styles.projectTimeline}>
 					<Event
-						title="Portfolio Development Fair"
-						description="Portfolio Development Fair is a weekend long event where participants learn about web development through student-led talks and even get to create their own website"
-						date="October 2022"
+						title="NOVA"
+						description="NOVA is a one-day event where participants learn about web development through student-led talks and even get to create their own website"
+						date="9 November 2024"
 						image={
 							<Image
 								src="/design/pdf.png"
 								width={820}
 								height={312}
-								alt="Portfolio Development Fair"
+								alt="NOVA"
 							/>
 						}
 					/>
@@ -36,7 +36,7 @@ export default function Events() {
 						description={
 							"Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks. Over the span of an action-packed weekend, hackers come together and create fantastic projects"
 						}
-						date="February 2023"
+						date="7-8 February 2025"
 						image={
 							<Image
 								src="/design/tartanhacks.png"
