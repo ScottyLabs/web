@@ -21,8 +21,8 @@ interface CarouselImageProps {
 
 const images: CarouselImageProps[] = [
 	{
-		src: '/events/crash-course.png',
-		label: 'Crash Course',
+		src: '/events/nova.png',
+		label: 'NOVA',
 		width: 1920,
 		height: 1005,
 	},
@@ -33,8 +33,8 @@ const images: CarouselImageProps[] = [
 		height: 444,
 	},
 	{
-		src: '/events/wdw.jpg',
-		label: 'Web Dev Weekend',
+		src: '/events/scottyspark.png',
+		label: 'ScottySpark',
 		width: 1640,
 		height: 624,
 	},

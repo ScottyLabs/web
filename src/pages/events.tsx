@@ -24,7 +24,7 @@ export default function Events() {
 						date="9 November 2024"
 						image={
 							<Image
-								src="/design/pdf.png"
+								src="/design/nova.png"
 								width={820}
 								height={312}
 								alt="NOVA"
@@ -43,6 +43,19 @@ export default function Events() {
 								width={1920}
 								height={1080}
 								alt="TartanHacks"
+							/>
+						}
+					/>
+					<Event
+						title="ScottySpark"
+						description="ScottySpark is an annual team idea competition for technology solutions to improve our campus. It’s a great event to flex your ideation skills and win some cool prizes"
+						date="April 2025"
+						image={
+							<Image
+								src="/design/scottyspark.png"
+								width={1920}
+								height={1080}
+								alt="ScottySpark"
 							/>
 						}
 					/>

@@ -50,26 +50,21 @@ export default function Home() {
 						<Typography variant="header">Meet Us!</Typography>
 						<br />
 						<Typography>
-							Weekly GBMs: Tuesdays, 5:30-6:30pm, Posner 153
+							Weekly GBMs: Mondays, 6-7pm, Tepper
 						</Typography>
 						<br />
 						<Typography>
-							Committee Work Sessions: Saturdays, 3-5pm, Posner
-							Hall
+							Committee Work Sessions: Saturdays, 4-6pm, Tepper
 						</Typography>
 						<div className={styles.meetingRooms}>
 							<Typography>Tech</Typography>
-							<Typography>Posner 151</Typography>
-							{/* <Typography>Example</Typography> */}
+							<Typography>Tepper</Typography>
 							<Typography>Design</Typography>
-							<Typography>Posner 145</Typography>
-							{/* <Typography>Example</Typography> */}
+							<Typography>Tepper</Typography>
 							<Typography>Labrador</Typography>
-							<Typography>Posner 146</Typography>
-							{/* <Typography>Example</Typography> */}
+							<Typography>Tepper</Typography>
 							<Typography>Events/Outreach/Finance</Typography>
-							<Typography>Posner 147</Typography>
-							{/* <Typography>Example</Typography> */}
+							<Typography>Tepper</Typography>
 						</div>
 					</div>
 				</div>

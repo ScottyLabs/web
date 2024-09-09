@@ -48,9 +48,9 @@ export default function Design() {
 						}
 					/>
 					<Project
-						title="Portfolio Development Fair Branding"
+						title="NOVA Branding"
 						softwareIcons={['illustrator', 'figma', 'procreate']}
-						description="Promotional Graphics and Branding for PDF, a series of workshops, lectures and exercises practicing web development"
+						description="Promotional Graphics and Branding for NOVA, a one-day event focusing on emerging technologies"
 						image={
 							<Image
 								src="/design/pdf.png"
