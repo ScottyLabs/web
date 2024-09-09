@@ -25,8 +25,8 @@ export default function Events() {
 						image={
 							<Image
 								src="/design/nova.png"
-								width={820}
-								height={312}
+								width={2266}
+								height={1248}
 								alt="NOVA"
 							/>
 						}

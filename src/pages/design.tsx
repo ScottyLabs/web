@@ -53,10 +53,10 @@ export default function Design() {
 						description="Promotional Graphics and Branding for NOVA, a one-day event focusing on emerging technologies"
 						image={
 							<Image
-								src="/design/pdf.png"
-								width={820}
-								height={312}
-								alt="Portfolio Development Fair"
+								src="/design/nova.png"
+								width={2266}
+								height={1248}
+								alt="NOVA"
 							/>
 						}
 					/>

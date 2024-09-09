@@ -23,8 +23,8 @@ const images: CarouselImageProps[] = [
 	{
 		src: '/events/nova.png',
 		label: 'NOVA',
-		width: 1920,
-		height: 1005,
+		width: 2266,
+		height: 1248,
 	},
 	{
 		src: '/events/tartanhacks.png',
