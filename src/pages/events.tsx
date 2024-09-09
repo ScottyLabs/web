@@ -20,7 +20,7 @@ export default function Events() {
 				<Timeline className={styles.projectTimeline}>
 					<Event
 						title="NOVA"
-						description="NOVA is a one-day event where participants learn about web development through student-led talks and even get to create their own website"
+						description="NOVA is a one-day event focusing on emerging technologies where participants build a project using cutting-edge technologies of their choice, attending workshops, and interacting with mentors. The event will culminate in a project expo, in which participants' efforts will be showcased to judges and sponsors."
 						date="9 November 2024"
 						image={
 							<Image
