@@ -74,14 +74,14 @@ export default function Design() {
 						}
 					/>
 					<Project
-						title="Crash Course Branding"
+						title="ScottySpark Branding"
 						softwareIcons={['illustrator', 'figma', 'procreate']}
-						description="Promotional Graphics for Crash Course, a collection of software workshops hosted by ScottyLabs"
+						description="Promotional Graphics for ScottySpark, an annual team idea competition for technology solutions to improve our campus"
 						image={
 							<Image
-								src="/design/crash-course.png"
+								src="/design/scottyspark.png"
 								width={1920}
-								height={1005}
+								height={1080}
 								alt="Crash Course"
 							/>
 						}
