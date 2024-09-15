@@ -50,7 +50,7 @@ export default function Home() {
 						<Typography variant="header">Meet Us!</Typography>
 						<br />
 						<Typography>
-							Weekly GBMs: Mondays, 6-7pm, Tepper
+							Biweekly GBMs: Mondays, 6-7pm, Tepper 2611
 						</Typography>
 						<br />
 						<Typography>
@@ -58,13 +58,13 @@ export default function Home() {
 						</Typography>
 						<div className={styles.meetingRooms}>
 							<Typography>Tech</Typography>
-							<Typography>Tepper</Typography>
+							<Typography>Tepper 2611</Typography>
 							<Typography>Design</Typography>
-							<Typography>Tepper</Typography>
+							<Typography>Tepper 3801</Typography>
 							<Typography>Labrador</Typography>
-							<Typography>Tepper</Typography>
+							<Typography>Tepper 2700</Typography>
 							<Typography>Events/Outreach/Finance</Typography>
-							<Typography>Tepper</Typography>
+							<Typography>Tepper 3808</Typography>
 						</div>
 					</div>
 				</div>
