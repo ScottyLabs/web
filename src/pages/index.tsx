@@ -58,11 +58,13 @@ export default function Home() {
 						</Typography>
 						<div className={styles.meetingRooms}>
 							<Typography>Tech</Typography>
-							<Typography>Tepper 2611</Typography>
+							<Typography>Tepper 2612</Typography>
 							<Typography>Design</Typography>
 							<Typography>Tepper 3801</Typography>
 							<Typography>Labrador</Typography>
 							<Typography>Tepper 2700</Typography>
+							<Typography>Bootcamp</Typography>
+							<Typography>Tepper 2613</Typography>
 							<Typography>Events/Outreach/Finance</Typography>
 							<Typography>Tepper 3808</Typography>
 						</div>
