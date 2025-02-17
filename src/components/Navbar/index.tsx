@@ -36,15 +36,26 @@ function Toolbar({ collapsed }: { collapsed: Boolean }) {
 						onClick={() => setMobileLinksVisible(false)}
 					>
 						<div className={styles.navLinkModal}>
-							{/* <Link href="/about" passHref>
-                <a className={`link ${styles.navLink}`}>/about</a>
-              </Link> */}
+							{/* <Link
+								href="/about"
+								passHref
+								className={`link ${styles.navLink}`}
+							>
+								/about
+							</Link> */}
 							<Link
 								href="/tech"
 								passHref
 								className={`link ${styles.navLink}`}
 							>
 								/tech
+							</Link>
+							<Link
+								href="/labrador"
+								passHref
+								className={`link ${styles.navLink}`}
+							>
+								/labrador
 							</Link>
 							<Link
 								href="/design"
@@ -72,15 +83,26 @@ function Toolbar({ collapsed }: { collapsed: Boolean }) {
 				) : null}
 			</div>
 			<div className={styles.navLinkContainer}>
-				{/* <Link href="/about" passHref>
-          <a className={`link ${styles.navLink}`}>/about</a>
-        </Link> */}
+				{/* <Link
+						href="/about"
+						passHref
+						className={`link ${styles.navLink}`}
+					>
+						/about
+					</Link> */}
 				<Link
 					href="/tech"
 					passHref
 					className={`link ${styles.navLink}`}
 				>
 					/tech
+				</Link>
+				<Link
+					href="/labrador"
+					passHref
+					className={`link ${styles.navLink}`}
+				>
+					/labrador
 				</Link>
 				<Link
 					href="/design"
