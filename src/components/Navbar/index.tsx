@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { useState } from 'react';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import ScottyLabsIcon from '../../icons/ScottyLabsIcon';
 import Gradient from '../Gradient';
 import styles from './index.module.scss';
@@ -24,7 +25,7 @@ function Toolbar({ collapsed }: { collapsed: Boolean }) {
 			<div className={styles.navMobile}>
 				<div className={styles.navSandwich}>
 					<FontAwesomeIcon
-						icon="bars"
+						icon={faBars}
 						onClick={() =>
 							setMobileLinksVisible(!mobileLinksVisible)
 						}
