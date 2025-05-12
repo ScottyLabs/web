@@ -2,7 +2,7 @@ import BaseLayout from 'layouts/BaseLayout';
 import styles from 'styles/Sponsors.module.scss';
 
 export default function Sponsors() {
-	const sponsorPacketURL = 'Sponsorship_24_25.pdf';
+	const sponsorPacketURL = 'Sponsorship_Packet_25-26.pdf';
 
 	return (
 		<BaseLayout collapsedNavBar>
