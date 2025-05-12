@@ -35,9 +35,7 @@ export default function Design() {
 							'illustrator',
 							'after-effects',
 						]}
-						description={
-							"Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks. The event's logo, merchandise, advertisements and motion graphics are designed for a different theme and visual language"
-						}
+						description="Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks. The event's logo, merchandise, advertisements and motion graphics are designed for a different theme and visual language"
 						image={
 							<Image
 								src="/design/tartanhacks.png"

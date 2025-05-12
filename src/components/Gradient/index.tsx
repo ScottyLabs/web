@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import isSafari from '../../utils/isSafari';
 import styles from './index.module.scss';
 
@@ -13,7 +13,7 @@ export interface SubGradientProps {
 }
 
 function AnimatedGradient({ className }: SubGradientProps) {
-	useEffect(() => {
+	useLayoutEffect(() => {
 		if (window?.Gradient != null) {
 			const gradient = new window.Gradient();
 			gradient.freqX = 14e-5;
@@ -33,14 +33,6 @@ function AnimatedGradient({ className }: SubGradientProps) {
 	);
 }
 
-const isSSR = () => typeof window === 'undefined';
-
-// Wrapper component to handle client-side only rendering
-function AnimatedGradientNoSSRWrapper(props: SubGradientProps) {
-	// Only render the AnimatedGradient component on the client-side
-	return !isSSR() ? <AnimatedGradient {...props} /> : null;
-}
-
 /**
  * Expanded gradient with a wave-masked bottom border.
  * Used in the home page with the hero icon
@@ -48,7 +40,7 @@ function AnimatedGradientNoSSRWrapper(props: SubGradientProps) {
 function ExpandedGradient({ className }: SubGradientProps) {
 	return (
 		<div className={clsx(styles.gradientContainer, className)}>
-			<AnimatedGradientNoSSRWrapper
+			<AnimatedGradient
 				className={clsx(
 					isSafari() ? styles.gradientSafari : styles.gradient,
 				)}
