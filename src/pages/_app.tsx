@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	return (
 		<ClerkProvider
+			{...pageProps}
 			allowedRedirectOrigins={[
 				'https://www.cmucourses.com',
 				'https://cmucourses.com',
