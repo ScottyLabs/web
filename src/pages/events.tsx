@@ -33,9 +33,7 @@ export default function Events() {
 					/>
 					<Event
 						title="TartanHacks"
-						description={
-							"Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks. Over the span of an action-packed weekend, hackers come together and create fantastic projects"
-						}
+						description="Every year, ScottyLabs hosts Pittsburgh's largest hackathon TartanHacks. Over the span of an action-packed weekend, hackers come together and create fantastic projects"
 						date="7-8 February 2025"
 						image={
 							<Image

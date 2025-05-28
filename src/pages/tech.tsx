@@ -105,9 +105,7 @@ export default function Tech() {
 					<Project
 						title="scotty.lol"
 						softwareIcons={['typescript', 'mongodb', 'react']}
-						description={
-							"Scottylol is an exciting search tool for CMU. It is ScottyLabs' implementation of Facebook's internal bunnylol search tool."
-						}
+						description="Scottylol is an exciting search tool for CMU. It is ScottyLabs' implementation of Facebook's internal bunnylol search tool."
 						link="https://scotty.lol"
 						image={
 							<Image
@@ -121,9 +119,7 @@ export default function Tech() {
 					<Project
 						title="TartanHacks Website"
 						softwareIcons={['typescript', 'react', 'nextjs']}
-						description={
-							"Promotional website for TartanHacks, Pittsburgh's largest hackathon"
-						}
+						description="Promotional website for TartanHacks, Pittsburgh's largest hackathon"
 						link="https://tartanhacks.com"
 						image={
 							<Image
